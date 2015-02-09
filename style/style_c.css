@@ -1,4 +1,8 @@
 .c_ico{ background-repeat:no-repeat; }
+
+.c_arrow_bottom_white{ background-image:url(images/ico_arrow_down_white.png); width:10px; height:6px;}
+
+.c_arrow_down_outline{ background-image:url(images/ico_arrow_down_outline.png); width:24px; height:24px; }
 .c_arrow_right_outline{ background-image:url(images/ico_arrow_right_outline.png); width:24px; height:24px; }
 .c_arrow_right_outline2{ background-image:url(images/ico_arrow_right_outline2.png); width:24px; height:24px; }
 .c_arrow_right{ background-image:url(images/ico_arrow_right.png); width:6px; height:10px; }
@@ -128,5 +132,25 @@
 .c_fd_body .c_item:nth-child(8):after
 {content:''; position:absolute;right: 1px; top:18px; bottom:18px; border-left:1px solid #e5e5e5;}
 
+.c_page{ }
+.c_page_menu{ margin-top:-50px; background-color:#212121; width:300px; float:left;}
+.c_page_menu .c_title{width: 275px; height: 50px; line-height: 50px; background-color: #f42536; color: #fff; padding-left: 25px; font-size: 16px; }
+.c_page_menu_ul{}
+.c_page_menu_ul > .c_item{}
+.c_page_menu_ul .c_menu_item{ position:relative;color: #fff; display: block; height: 50px; line-height: 50px; padding-left: 25px; font-size: 16px;-webkit-transition:all .2s cubic-bezier(0.25, .5, .5, .9);
+-moz-transition:all .2s cubic-bezier(0.25, .5, .5, .9);
+transition:all .2s cubic-bezier(0.25, .5, .5, .9);}
+.c_page_menu_ul .c_menu_item:hover,.c_page_menu_ul .active .c_menu_item{ background-color:#ff1f35;}
 
+.c_page_menu_ul .c_item a{color: #fff; display: block; height: 50px; line-height: 50px; padding-left: 25px; font-size: 16px;-webkit-transition:all .2s cubic-bezier(0.25, .5, .5, .9);
+-moz-transition:all .2s cubic-bezier(0.25, .5, .5, .9);
+transition:all .2s cubic-bezier(0.25, .5, .5, .9);}
+.c_menu_child{ background-color:#424242; display:none;}
+.c_page_menu_ul .active  .c_menu_child{ display:block;}
+.c_page_menu_ul .active .c_menu_item,.c_page_menu_ul .active .c_menu_child a{ padding-left:45px;}
 
+.c_page_content{ overflow:hidden;}
+.c_page_content .c_title{ font-size:24px; margin:35px 0 5px 25px; padding:0 0 0 24px;border-left: 4px solid #ff1f35;}
+.c_page_content .c_title2{ color:#ff1f35; margin:0 0 0 54px;}
+
+.c_page_body{ padding:18px 40px 20px 54px; font-size:14px; color:#666; line-height:26px; text-indent:2em;}
