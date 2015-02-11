@@ -87,3 +87,21 @@
 .l_button:hover{ color:#fff; }
 .l_button_red{ background-color:#ff1f35; }
 .l_button_green{ background-color: #2196f3;}
+
+/**left banner**/
+.l_right_banner{  position: fixed; right:30px; top:590px; z-index:100;}
+.l_right_banner .l_icon_box{ position: relative; display: block; width:34px; height: 49px; line-height: 49px; text-align: center; border-top: 1px solid #dedede;}
+.l_right_banner .l_icon_box:first-child{ border-top: 0;}
+.l_right_banner .l_icon01,.l_right_banner .l_icon02,.l_right_banner .l_icon03,.l_right_banner .l_icon04{ display: inline-block; vertical-align: middle; background-repeat: no-repeat;}
+.l_right_banner .l_icon01{  width:22px; height: 22px;  background-image:url(images/ico_qrcode.png);}
+.l_right_banner .l_icon02{  width:26px; height: 18px; background-image: url(images/ico_online.png);}
+.l_right_banner .l_icon03{  width:24px; height: 18px; background-image: url(images/ico_diamond.png);}
+.l_right_banner .l_icon04{  width:24px; height: 24px; background-image: url(images/ico_tool_5.png);}
+.l_right_banner .l_icon_box:hover .l_icon,.l_right_banner .l_icon_txt{ display: none;}
+.l_right_banner .l_icon_box:hover .l_icon_txt{ position: absolute; display: block; left:-10px; bottom:0; top:0; right:-10px; padding:5px 10px; background-color:#ff1f35; font-size:16px; line-height: 18px; color: #fff; }
+.l_right_banner .l_qcode{ display: none; position: absolute; width:270px;  left:-280px; top:0; background-color: #fff; box-shadow: 1px 2px 2px #bbbaba; border: 1px solid #f2f2f2;}
+.l_right_banner .l_icon_box:hover .l_qcode{ display: block; color: #333;}
+.l_right_banner .l_qcode_inner{ overflow: hidden; padding:30px 0;}
+.l_right_banner .l_qcode_cell{ float: left; width:135px; text-align: center; line-height: 20px; font-size: 14px;}
+.l_right_banner .l_qcode_img{ width:135px; height: 79px; border-left:1px solid #d9d9d9; padding:7px 0;}
+.l_right_banner .l_qcode_cell:first-child .l_qcode_img{ border-left: 0;}
