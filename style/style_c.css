@@ -178,8 +178,9 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 
 .c_fund_info .c_grey{ font-size:16px; padding-bottom:13px; }
 .c_fund_info .c_red{ font-size:32px; }
+.c_fund_info .c_null{ font-size:26px; }
 .c_fund_info .c_row .c_col:first-child .c_red{ font-size:46px; margin-top:-7px; }
-.c_fund_info .c_txt{ font-size:32px; }
+.c_fund_info .c_txt{ font-size:30px; }
 .c_fund_info .c_row:nth-child(2) .c_col:first-child,.c_fund_info .c_row:nth-child(3) .c_col:first-child{ width:180px; }
 .c_fund_info .c_row:nth-child(3) .c_col:last-child{ width:195px; }
 
@@ -188,6 +189,8 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_fund_chart .c_title2{ font-size:12px; }
 .c_fund_chart .c_drop_menu{ position:absolute; top:15px; right:22px; cursor:pointer; }
 .c_fund_chart_body{ padding-top:12px; }
+.c_fund_chart_body .c_null{ text-align:center; font-size:36px; margin-top:60px;}
+
 
 .c_drop_menu{ }
 
