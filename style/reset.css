@@ -70,6 +70,7 @@ transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
 
 .h_login_title{ color:#fff; font-size:16px; margin-bottom:18px; display:block; }
 .h_login_title .h_txt{ }
+.h_notice_title{ margin-bottom:8px;}
 
 .h_notice_title:hover{ color:#ff1f35; }
 .h_notice_title:hover .h_ico_notice{ background-image:url(images/ico_notice_hover.png); }
