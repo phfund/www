@@ -79,8 +79,8 @@
 .c_grid_540 .c_grid_news:nth-child(3){ color:#fff; font-size:16px; }
 .c_grid_540 .c_grid_news .c_title{ height:80px; overflow:hidden; font-size:16px; }
 .c_grid_540 .c_date{ color:#ababab; font-size:12px; }
-.c_grid_900 .c_ico_right{ background-image:url(images/ico_arrow_right3_outline.png); width:24px; height:24px; margin:5px 0 0;}
-.c_grid_900 .c_ico_right2{ background-image:url(images/ico_arrow_right2_outline.png); width:24px; height:24px; margin:5px 0 0;}
+.c_grid_900 .c_ico_right{ background-image:url(images/ico_arrow_right3_outline.png); width:24px; height:24px; margin:5px 0 0; display:block;}
+.c_grid_900 .c_ico_right2{ background-image:url(images/ico_arrow_right2_outline.png); width:24px; height:24px; margin:5px 0 0; display:block;}
 
 .c_grid_star .c_item2{ width:360px; background-color:#e6eff9!important;}
 .c_grid_star .c_item3{ width:360px; background-color:#9c21b5!important; color:#fff!important;}
