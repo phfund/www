@@ -76,6 +76,14 @@
     $('.c_page_menu_ul li').click(function () {
         $(this).toggleClass('active');
     });
+ /*
+     * 联系方式
+     * */
+
+    $('.c_expender .c_ico').click(function () {
+        $(this).closest('.c_item').toggleClass('active');
+        console.log(111)
+    });
 
     /**
      * 右侧的banner

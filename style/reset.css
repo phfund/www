@@ -13,6 +13,7 @@ input::-ms-clear{ display:none; }
 .clear{ clear:both; }
 .fl{ float:left; }
 .fr{ float:right !important; }
+.tc{ text-align:center;}
 .vam{ display:inline-block; vertical-align:middle; }
 .noselect{ -moz-user-select:-moz-none; -webkit-user-select:none; -ms-user-select:none; }
 .ableselect{ -moz-user-select:-moz-all; -webkit-user-select:auto; -ms-user-select:element; }
@@ -40,10 +41,14 @@ input::-ms-clear{ display:none; }
 
 .h_logo{ background-image:url(images/ico_logo.png); width:176px; height:41px; float:left; margin:14px 0 0 30px; display:inline; }
 
-.h_nav{ float:left; padding:27px 40px 0 0px; }
+.h_nav{ float:left; padding:3px 40px 0 0px; }
 .h_nav .h_item{ float:left; padding:0 10px; }
-.h_nav .h_item a{ display:block; height:42px; color:#fff; font-size:16px; border-bottom:5px solid transparent; padding:0 18px; }
-.h_nav .h_item a:hover, .h_nav .h_item .active{ color:#fff; border-color:#ff1f35; }
+.h_nav .h_item a{ display:block; height:72px; line-height:72px; color:#fff; font-size:16px;  padding:0 18px; }
+.h_nav .h_item a:hover,
+.h_nav .h_item .active,
+.h_nav .h_item a:hover .c_red,
+.h_nav .h_item .active .c_red
+{ color:#fff; background-color:#ff1f35; }
 
 .h_search{ background-image:url(images/ico_search.png); width:20px; height:19px; float:left; margin:28px; opacity:.5; }
 .h_search:hover{ opacity:1; }
