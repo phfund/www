@@ -4,6 +4,12 @@
 
 (function (window, document, undefined) {
 
+    /*
+    * header footer
+    * */
+
+
+
 
     /*
      * 登陆框切换*/
@@ -24,7 +30,7 @@
      * 首页 左侧tab
      * */
 
-    $('.c_grid_menu a').click(function () {
+    $('.c_grid_menu a').hover(function () {
 
         if (!$(this).hasClass('active')) {
 
