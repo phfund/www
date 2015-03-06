@@ -307,11 +307,15 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_invest_team{ text-indent:0; margin-left:-8px;}
 
 
-.c_expender{}
+.c_job {}
+.c_expender{ text-indent:0; padding-left:2em;}
 .c_expender .c_item{ position:relative; border-bottom:1px dashed #e5e5e5; padding:22px 0;}
-.c_expender .c_item .c_ico{ position:absolute;top: 25px; left:-12px; background-image:url(images/ico_plus.png); width:22px; height:22px; cursor:pointer;}
+.c_expender .c_item .c_ico{ position:absolute;top: 25px; left:-32px; background-image:url(images/ico_plus.png); width:22px; height:22px; cursor:pointer;}
 .c_expender .c_item.active{ border-top:none;}
 .c_expender .c_item.active .c_ico{ background-image:url(images/ico_minus.png);}
 .c_expender .c_title3{ font-size:18px;}
-.c_expender .c_content{ color:#808080; display:none; overflow:hidden; height:0;}
-.c_expender .c_item.active .c_content{ display:block;}
+.c_expender .c_content{ color:#808080;  overflow:hidden; height:0;-webkit-transition:all .3s ease-in-out .1s; padding:5px 0 0;}
+.c_expender .c_item.active .c_content{  height:auto;}
+
+.c_job .c_content{ color:#333;}
+
