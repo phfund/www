@@ -158,8 +158,8 @@
 .c_fd_table .c_item:nth-child(7){ width:100px; }
 .c_fd_table .c_item:nth-child(8){ width:230px; }
 .c_fd_table .c_item:nth-child(9){ width:156px; }
-.c_fd_table .c_fd_body{ font-size:13px; overflow:hidden;}
-.c_fd_table .c_fd_body .c_ul{ color:#808080; }
+.c_fd_table .c_fd_body{ font-size:13px; }
+.c_fd_table .c_fd_body .c_ul{ color:#808080; overflow:hidden;}
 .c_fd_table .c_fd_body a:hover{ text-decoration:underline;}
 .c_fd_table .c_fd_body .c_item:nth-child(2){ font-size:16px; color:#ff0000; }
 .c_fd_table .c_fd_body .c_item:first-child{ text-indent:-1em; border-right:1px solid #e5e5e5; color:#555; }

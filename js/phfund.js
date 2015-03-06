@@ -24,7 +24,8 @@
 
         scroll_top = $(window).scrollTop();
 
-        console.log(scroll_top)
+        console.log(last_item)
+        last_item.addClass('aaaa')
 
         if (scroll_top > list_offset_top) {
 
@@ -35,7 +36,7 @@
             list.removeClass('active');
         }
 
-        if (last_item_offset_top + 201 <= scroll_top) {
+        if (last_item_offset_top  <= scroll_top) {
             list.removeClass('active');
         }
 
