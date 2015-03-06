@@ -18,6 +18,7 @@ input::-ms-clear{ display:none; }
 .noselect{ -moz-user-select:-moz-none; -webkit-user-select:none; -ms-user-select:none; }
 .ableselect{ -moz-user-select:-moz-all; -webkit-user-select:auto; -ms-user-select:element; }
 .fz12{ font-size:12px!important;}
+.fz18{ font-size:18px;}
 /*common*/
 
 .header{ }
