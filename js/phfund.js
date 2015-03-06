@@ -107,4 +107,12 @@
 
     });
 
-})(window, window.document);
+    /**
+     * 返回顶部
+     * **/
+    $('.l_right_banner').on('click','.l_icon_box',function(){
+        if($(this).index() == 3){
+            $(window).scrollTop(0);
+        }
+    });
+ })(window, window.document);
