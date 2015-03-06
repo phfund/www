@@ -5,11 +5,41 @@
 (function (window, document, undefined) {
 
     /*
-    * header footer
-    * */
+     * 首页 基金tab 置顶
+     * */
 
+    $(window).bind('scroll', function () {
+        var tab_top = $('.c_fund_list .c_top'), //60
+            table_head = $('.c_fund_list .c_fd_th'), //41
+            table = $('.c_fd_table'),
+            table_body = $('.c_fd_body'),
+            list = $('.c_fund_list'),
+            list_offset = list.offset(),
+            list_offset_top = list_offset.top,
+            list_offset_left = list_offset.left,
+            last_item = $('.c_fd_table .c_ul:last-child'),
+            last_item_offset = last_item.offset(),
+            last_item_offset_top = last_item_offset.top
+            ;
 
+        scroll_top = $(window).scrollTop();
 
+        console.log(scroll_top)
+
+        if (scroll_top > list_offset_top) {
+
+            list.addClass('active');
+            tab_top.css('left', list_offset_left + 1);
+            table_head.css('left', list_offset_left + 1);
+        } else {
+            list.removeClass('active');
+        }
+
+        if (last_item_offset_top + 201 <= scroll_top) {
+            list.removeClass('active');
+        }
+
+    })
 
     /*
      * 登陆框切换*/
@@ -77,7 +107,7 @@
         $(this).toggleClass('active');
     });
 
- /*
+    /*
      * 联系方式 收起展开
      * */
 
@@ -111,9 +141,9 @@
     /**
      * 返回顶部
      * **/
-    $('.l_right_banner').on('click','.l_icon_box',function(){
-        if($(this).index() == 3){
+    $('.l_right_banner').on('click', '.l_icon_box', function () {
+        if ($(this).index() == 3) {
             $(window).scrollTop(0);
         }
     });
- })(window, window.document);
+})(window, window.document);
