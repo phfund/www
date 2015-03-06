@@ -76,8 +76,9 @@
     $('.c_page_menu_ul li').click(function () {
         $(this).toggleClass('active');
     });
+
  /*
-     * 联系方式
+     * 联系方式 收起展开
      * */
 
     $('.c_expender .c_ico').click(function () {

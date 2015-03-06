@@ -87,7 +87,7 @@
 .c_grid_theme .c_item:nth-child(4) .c_per{ color:#e64a19; }
 .c_grid_theme .c_grid_540 .c_button_outline{ position:absolute; bottom:26px; left:240px; }
 .c_grid_million{ }
-.c_grid_million .c_inner{ padding-right:22px; }
+.c_grid_million .c_inner{ padding-right:22px; position:static;}
 .c_grid_million .c_ico_right,
 .c_grid_million .c_ico_right2{ position:absolute; left:30px; bottom:22px; }
 .c_grid_million .c_grid_360 .c_item:nth-child(1){ background-color:#f7f7f7; }
@@ -313,5 +313,5 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_expender .c_item.active{ border-top:none;}
 .c_expender .c_item.active .c_ico{ background-image:url(images/ico_minus.png);}
 .c_expender .c_title3{ font-size:18px;}
-.c_expender .c_content{ color:#808080; display:none;}
+.c_expender .c_content{ color:#808080; display:none; overflow:hidden; height:0;}
 .c_expender .c_item.active .c_content{ display:block;}

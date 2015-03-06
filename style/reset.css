@@ -50,10 +50,10 @@ input::-ms-clear{ display:none; }
 .h_nav .h_item .active .c_red
 { color:#fff; background-color:#ff1f35; }
 
-.h_search{ background-image:url(images/ico_search.png); width:20px; height:19px; float:left; margin:28px; opacity:.5; }
+.h_search{ background-image:url(images/ico_search.png); width:20px; height:19px; float:left; margin:28px 25px 28px 25px; opacity:.5; }
 .h_search:hover{ opacity:1; }
 
-.h_explor{ position:relative; border-left:1px solid #ccc; padding:0 40px 0 24px; float:left; margin:17px 0 0; }
+.h_explor{ position:relative; border-left:1px solid #ccc; padding:0 40px 0 24px; float:right; margin:17px 0 0; }
 .h_explor .h_title{ color:#ff2b41; font-size:16px; padding-bottom:2px; display:block; }
 .h_explor .h_subtitle{ color:#fff; display:block; }
 .h_explor .h_ico_arrow_right_outline{ background-image:url(images/ico_arrow_right_outline.png); width:24px; height:24px; position:absolute; right:0; top:9px; }
