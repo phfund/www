@@ -187,3 +187,6 @@
 .l_grid_left_img{ float: left; width:120px; text-align: center;}
 .l_grid_left_content{ margin-left:120px; width:260px; color: #212121;}
 .l_grid_left_content .l_size_14{ color: #808080; padding-top: 10px; line-height: 24px;}
+.l_page_content{ overflow:hidden; }
+.l_page_content .c_title{ font-size:24px; margin:35px 0 5px 25px; padding:0 0 0 24px; border-left:4px solid #ff1f35; position:relative;}
+.l_page_content .c_title2{ color:#ff1f35; margin:0 0 0 54px; }
