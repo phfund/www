@@ -11,7 +11,7 @@
 .c_ico_t3{ background-image:url(images/ico_tool_3.png); width:24px; height:25px; }
 .c_ico_t4{ background-image:url(images/ico_tool_4.png); width:24px; height:24px; }
 .container{ width:1200px; margin:0 auto; position:relative; }
-.c_red{ color:#ff1f35; font-size:12px; }
+.c_red{ color:#ff1f35!important; font-size:12px; }
 .c_grey{ color:#c3c3c3 !important; }
 .c_green{ color:#299f55; }
 .c_button{ color:#fff; background-color:#ff1f35; height:36px; line-height:36px; text-align:center; min-width:90px; font-size:14px; display:inline-block; border-radius:18px; text-indent:0; }

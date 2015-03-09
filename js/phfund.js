@@ -5,6 +5,26 @@
 (function (window, document, undefined) {
 
     /*
+    * 头部搜索
+    * */
+
+     $('.h_search').bind('click', function () {
+        $('.h_search_box').addClass('active');
+        $('.h_search_box .h_input').focus();
+
+        return!1;
+    });
+
+    //fixme 测试用
+    $('.h_search_box .h_input').bind('keyup', function () {
+
+        $('.h_search_box .h_drop_menu').show();
+
+    });
+
+
+
+    /*
      * 首页 基金tab 置顶
      * */
 
