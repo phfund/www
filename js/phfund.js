@@ -5,14 +5,14 @@
 (function (window, document, undefined) {
 
     /*
-    * 头部搜索
-    * */
+     * 头部搜索
+     * */
 
-     $('.h_search').bind('click', function () {
+    $('.h_search').bind('click', function () {
         $('.h_search_box').addClass('active');
         $('.h_search_box .h_input').focus();
 
-        return!1;
+        return !1;
     });
 
     //fixme 测试用
@@ -21,8 +21,6 @@
         $('.h_search_box .h_drop_menu').show();
 
     });
-
-
 
     /*
      * 首页 基金tab 置顶
@@ -33,8 +31,13 @@
             table_head = $('.c_fund_list .c_fd_th'), //41
             table = $('.c_fd_table'),
             table_body = $('.c_fd_body'),
-            list = $('.c_fund_list'),
-            list_offset = list.offset(),
+            list = $('.c_fund_list');
+
+        if (list.length == 0) {
+            return !1;
+        }
+
+        var list_offset = list.offset(),
             list_offset_top = list_offset.top,
             list_offset_left = list_offset.left,
             last_item = $('.c_fd_table .c_ul:last-child'),
@@ -56,7 +59,7 @@
             list.removeClass('active');
         }
 
-        if (last_item_offset_top  <= scroll_top) {
+        if (last_item_offset_top <= scroll_top) {
             list.removeClass('active');
         }
 
