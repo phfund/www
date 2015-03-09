@@ -47,12 +47,13 @@
 .c_button_outline{ color:#ff1f35; background-color:transparent; border:2px solid #ff0000; padding:12px 30px; border-radius:22px; display:inline-block; font-size:16px; }
 .c_button_outline:hover{ background-color:#ff0000; color:#fff; }
 .c_grid_540{ float:left; width:540px; height:360px; }
+.c_grid_540 .c_item:hover{ color:#333;}
 .c_grid_540 .c_adi{ position:absolute; right:0; top:0; }
 .c_grid_540 .c_adi img{ height:100%; }
 .c_grid_540 .c_item:nth-child(1){ background-color:#f0e6dd; }
 .c_grid_540 .c_item:nth-child(2){ background-color:#f7f7f7; }
-.c_grid_540 .c_item:nth-child(3){ background-color:#349ce3; color:#fff; }
-.c_grid_540 .c_item:nth-child(4){ background-color:#f05b89; color:#fff; }
+.c_grid_540 .c_item:nth-child(3),.c_grid_540 .c_item:nth-child(3):hover{ background-color:#349ce3; color:#fff; }
+.c_grid_540 .c_item:nth-child(4),.c_grid_540 .c_item:nth-child(4):hover{ background-color:#f05b89; color:#fff; }
 .c_grid_540 .c_item:nth-child(3) .c_per{ color:#fff; }
 .c_grid_540 .c_item:nth-child(4) .c_per{ color:#fff; }
 .c_grid_540 .c_item:nth-child(5){ background-color:#e4e7ed; }
@@ -72,28 +73,28 @@
 .c_grid_star .c_item2{ width:360px; background-color:#e6eff9 !important; }
 .c_grid_star .c_item3{ width:360px; background-color:#9c21b5 !important; color:#fff !important; }
 .c_grid_star .c_item3 .c_per{ color:#fff; }
-.c_grid_star .c_item:nth-child(4){ background-color:#ff5221; }
+.c_grid_star .c_item:nth-child(4),.c_grid_star .c_item:nth-child(4):hover{ background-color:#ff5221; }
 .c_grid_theme .c_ico_tab_theme{ background-image:url(images/ico_tab_theme.png); width:40px; height:40px; display:inline-block; vertical-align:middle; margin-right:4px; }
-.c_grid_theme .c_grid_360_top{ background-color:#1975d0; color:#fff; padding:28px; }
+.c_grid_theme .c_grid_360_top{ background-color:#1975d0; color:#fff; padding:28px; display:block; }
 .c_grid_theme .c_grid_360{ background-color:#e1ecf5; }
 .c_grid_theme .c_item{ width:392px; position:relative; }
 .c_grid_theme .c_title{ padding-bottom:4px; }
 .c_grid_theme .c_title2{ padding-bottom:5px; }
 .c_grid_theme .c_inner{ padding-top:22px; }
-.c_grid_theme .c_item2{ width:148px; color:#fff; background-color:#e64a19 !important; }
-.c_grid_theme .c_item3{ width:148px; color:#fff; background-color:#7b1fa2 !important; }
+.c_grid_theme .c_item2,.c_grid_theme .c_item2:hover{ width:148px; color:#fff; background-color:#e64a19 !important; }
+.c_grid_theme .c_item3,.c_grid_theme .c_item3:hover{ width:148px; color:#fff; background-color:#7b1fa2 !important; }
 .c_grid_theme .c_item:nth-child(2){ background-color:#ffefeb; }
-.c_grid_theme .c_item:nth-child(4){ background-color:#e5d5e8; color:#000; }
+.c_grid_theme .c_item:nth-child(4),.c_grid_theme .c_item:nth-child(4):hover{ background-color:#e5d5e8; color:#000; }
 .c_grid_theme .c_item:nth-child(4) .c_per{ color:#e64a19; }
 .c_grid_theme .c_grid_540 .c_button_outline{ position:absolute; bottom:26px; left:240px; }
 .c_grid_million{ }
 .c_grid_million .c_inner{ padding-right:22px; position:static;}
 .c_grid_million .c_ico_right,
 .c_grid_million .c_ico_right2{ position:absolute; left:30px; bottom:22px; }
-.c_grid_million .c_grid_360 .c_item:nth-child(1){ background-color:#f7f7f7; }
-.c_grid_million .c_grid_360 .c_item:nth-child(2){ background-color:#349ce3; color:#fff; }
-.c_grid_million .c_grid_360 .c_item:nth-child(3){ background-color:#00bcd4; }
-.c_grid_million .c_grid_360 .c_item:nth-child(4){ background-color:#f7f7f7; }
+.c_grid_million .c_grid_360 .c_item:nth-child(1),.c_grid_million .c_grid_360 .c_item:nth-child(1):hover{ background-color:#f7f7f7; color:#555; }
+.c_grid_million .c_grid_360 .c_item:nth-child(2),.c_grid_million .c_grid_360 .c_item:nth-child(2):hover{ background-color:#349ce3; color:#fff; }
+.c_grid_million .c_grid_360 .c_item:nth-child(3),.c_grid_million .c_grid_360 .c_item:nth-child(3):hover{ background-color:#00bcd4; color:#555; }
+.c_grid_million .c_grid_360 .c_item:nth-child(4),.c_grid_million .c_grid_360 .c_item:nth-child(4):hover{ background-color:#f7f7f7; color:#555;}
 .c_grid_million .c_ico{ position:absolute; right:0; bottom:0; width:80px; height:80px; }
 .c_ico_heart{ background-image:url(images/ico_tab_heart.png); }
 .c_ico_persion{ background-image:url(images/ico_tab_person.png); }
