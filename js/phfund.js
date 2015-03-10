@@ -47,9 +47,6 @@
 
         scroll_top = $(window).scrollTop();
 
-        console.log(last_item)
-        last_item.addClass('aaaa')
-
         if (scroll_top > list_offset_top) {
 
             list.addClass('active');
