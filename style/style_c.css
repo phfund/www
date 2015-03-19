@@ -319,19 +319,25 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_expender .c_item .c_ico{ position:absolute; top:25px; left:-32px; background-image:url(images/ico_plus.png); width:22px; height:22px; cursor:pointer; }
 .c_expender .c_item.active{ border-top:none; }
 .c_expender .c_item.active .c_ico{ background-image:url(images/ico_minus.png); }
-.c_expender .c_title3{ font-size:18px; }
-.c_expender .c_content{ color:#808080; overflow:hidden; height:0; -webkit-transition:all .3s ease-in-out .1s; padding:5px 0 0; }
-.c_expender .c_item.active .c_content{ height:auto; }
+.c_expender .c_title3{ font-size:18px; padding-bottom:0px;}
+.c_expender .c_content{ color:#808080; overflow:hidden; height:0; -webkit-transition:all .3s ease-in-out .1s; padding:0; }
+.c_expender .c_item.active .c_content{ height:auto; padding-top:23px;}
 .c_job .c_content{ color:#333; }
 .c_table{ font-size:14px; color:#666; text-indent:0; border:1px solid #333; width:100%; border-spacing:0; border-collapse:collapse; margin-bottom:22px; }
 .c_table th{ font-size:18px; color:#000; padding:20px 0; border:1px solid #444; }
 .c_table td{ width:33%; border:1px solid #444; }
 .c_page_news_list{ overflow:hidden; text-indent:0; padding-bottom:22px; }
-.c_page_news_list .c_item{ overflow:hidden; }
+.c_page_news_list .c_item{ overflow:hidden; white-space:nowrap;}
+.c_page_news_list .c_item .fl{ overflow:hidden;text-overflow:ellipsis; width:567px;}
+.c_page_news_list .c_item .fr{ color:#ff1f35; }
+.c_page_news_list .c_line{ margin:19px 0; border-top:1px dashed #e5e5e5;}
 .c_pager{ text-align:center; padding:22px 0 65px; text-indent:0; font-size:0; }
 .c_pager .c_item{ display:inline-block; width:36px; height:36px; text-align:center; line-height:36px; background-color:#e5e5e5; font-size:12px; vertical-align:middle; border-radius:18px; margin:0 7px; cursor:pointer; padding-bottom:0; }
 .c_pager .c_item.active{ background-color:#ff1f35; color:#fff; cursor:default; }
 .c_pager .c_pager_next{ overflow:hidden; background-image:url(images/ico_pager_next.png); }
+.c_pager .c_pager_prev{ overflow:hidden; background-image:url(images/c_pager_prev.png);}
+.c_pager .c_pager_first{ overflow:hidden; background-image:url(images/c_pager_first.png);}
+.c_pager .c_pager_last{ overflow:hidden; background-image:url(images/c_pager_last.png);}
 .c_fund_sider_text{ margin:58px 28px 54px 30px; position:relative; line-height:28px; display:block; }
 .c_fund_sider_text .c_title{ font-size:36px; color:#fff; padding-bottom:8px; }
 .c_fund_sider_text .c_title2{ font-size:18px; color:#ff1f35; }
@@ -545,3 +551,12 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_client_service .c_star_box{ padding:17px 0 0;}
 .c_client_service .c_star_box .c_t1{ font-size:14px; padding-right:8px;}
 .c_client_service .c_star_box .c_ico{ display:inline-block;}
+
+
+.c_client_body .c_expender .c_content{ color:#808080;}
+
+.c_page_search{ border:1px solid #e5e5e5; background-color:#fff; padding:0 32px 0 12px; position:absolute; top:12px; right:20px; width:460px;}
+.c_page_search .c_input{ border:none; height:38px;width: 100%;}
+.c_page_search .c_ico{ position:absolute; background-image:url(images/h_ico_search.png); width:36px; height:36px; top:1px; right:1px; cursor:pointer;}
+
+
