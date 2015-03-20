@@ -633,7 +633,7 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_master .c_img{ float:left; padding:0 40px 0 0; }
 .c_master .c_img img{ display:block;}
 .c_master .c_m_body{ overflow:hidden;font-size:14px; }
-.c_master .c_top_links { padding:7px 0 28px; }
+.c_master .c_top_links { padding:0px 0 28px; }
 .c_master .c_top_links .c_ul{ display:inline; }
 .c_master .c_top_links .c_item{ display:inline; padding:0 12px; position:relative;}
 .c_master .c_top_links .c_item:after{ content:'|'; color:#ccc; position:absolute;right: 0;}
