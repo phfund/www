@@ -3,6 +3,114 @@
  */
 
 (function (window, document, undefined) {
+    /********from coffee*************/
+    var __super,
+        __hasProp = {}.hasOwnProperty,
+        __extends = function (child, parent) {
+            for (var key in parent) {
+                if (__hasProp.call(parent, key)) child[key] = parent[key];
+            }
+            if (typeof parent === 'object') return;
+            function Ctor() {
+                this.constructor = child;
+            }
+
+            child.Init = function (o) {
+                this.init(o);
+            };
+            Ctor.prototype = parent.prototype;
+            child.fn = child.Init.prototype = child.prototype = new Ctor();
+            child.__super__ = parent.prototype;
+            return child;
+        };
+    /************************/
+    __super = (function () {
+        function __super() {
+        }
+
+        __super.prototype.init = function (o) {
+            this.init(o);
+        };
+        return __super;
+    })();
+    $.gui = {};
+
+    $.gui.tabs_defaults = {
+        container: null, //tab 最外层的 className
+        top: null, //包裹 topElem 的 className
+        topElem: 'a', //点击的元素 ,一定要有 href 属性, 对应切换容器的 id
+        activeClass: 'Selected',// tabElem 选中的 className
+        events: 'click', //切换事件, 默认点击
+        callback: null // 切换回调
+    };
+    var tabs;
+    tabs = (function (_super) {
+
+        __extends(tabs, _super);
+        function tabs(options) {
+            var opts = $.extend({}, $.gui.tabs_defaults, options);
+            return new tabs.Init(opts);
+        }
+
+        $.extend(tabs.fn, {
+            init: function (options) {
+                var top = $(options.top, options.container),
+                    items = $(options.topElem, top),
+                    contents = [];
+                items.each(function (i, item) {
+                    contents.push(item.getAttribute('href'));
+                });
+
+                this.items = items;
+                this.contents = contents;
+                this.options = options;
+                this.bind();
+            },
+            bind: function () {
+                var contents = this.contents,
+                    options = this.options,
+                    callback = options.callback;
+                this.items.bind(options.events, function (evt) {
+                    var href = this.getAttribute('href');
+                    contents.forEach(function (item) {
+                        if (item == href) {
+                            $(item, options.container).show();
+                        } else {
+                            $(item, options.container).hide();
+                        }
+                    });
+                    $(this).addClass(options.activeClass).siblings().removeClass(options.activeClass);
+                    if (!!callback) {
+                        callback(href);
+                    }
+                    evt.stopPropagation();
+                    evt.preventDefault();
+                });
+            },
+            unbind: function () {
+                this.items.unbind();
+            }
+        });
+
+        return tabs;
+    })(__super);
+
+    /*
+     function tabs(options){
+     var opts =  $.extend({}, $.gui.tabs.defaults, options);
+     return new tabs.init(opts);
+     }
+     tabs.init = function(options){
+     this.init(options);
+     };
+     tabs.fn = tabs.init.prototype = tabs.prototype ;
+     */
+    $.gui.tabs = tabs;
+})(window, window.document);
+
+
+(function (window, document, undefined) {
+
 
     /*
      * 头部搜索
@@ -167,4 +275,71 @@
             $(window).scrollTop(0);
         }
     });
-})(window, window.document);
+
+    /*
+     * 字号切换
+     * */
+
+    $('.c_text_size_switch .c_item').bind('click', function () {
+
+        var _this = this,
+            $this = $(this),
+            index = $this.index(),
+            $content = $('.c_content');
+
+        if ($this.hasClass('acitve')) {
+
+            return;
+        }
+
+        $this.siblings().removeClass('active');
+        $this.addClass('active');
+
+        switch (index) {
+            case 0:
+
+                $content.removeClass('small normal');
+                $content.addClass('big');
+                break;
+            case 1:
+                $content.removeClass('big small');
+                $content.addClass('normal');
+                break;
+            case 2:
+                $content.removeClass('big normal');
+                $content.addClass('small');
+                break;
+
+        }
+    });
+
+    /*
+     * 资讯详情 杂志切换
+     * */
+
+    if($.jCarouselLite){
+        $(".c_sider_slider").jCarouselLite({
+            btnNext: ".c_slider_box .c_btn_next",
+            btnPrev: ".c_slider_box .c_btn_prev",
+            speed: 500,
+            visible: 1
+        });
+
+    }
+
+
+
+    /*
+    * tabs切换
+    * */
+
+    $.gui.tabs({
+        container: '.c_page', //tab 最外层的 selector
+        top: '.c_tab', //包裹 topElem 的 selector
+        topElem: 'a', //点击的元素 ,一定要有 href 属性, 对应切换容器的 id
+        activeClass: 'active',// tabElem 选中的 className
+        events: 'click', //切换事件, 默认点击
+        callback: null // 切换回调
+    })
+
+})(window, window.document)
