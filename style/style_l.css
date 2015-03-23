@@ -221,7 +221,8 @@
 .l_team_intro .l_page_left{ left:16px;}
 .l_team_intro .l_page_right{ right:16px;}
 .l_team_intro_list{ position: relative; width:817px; height: 230px; margin-top:40px; overflow: hidden;}
-.l_team_intro_cell{ position: absolute; left:85px; right:85px; height:220px; border-radius: 10px; text-indent: 0; background-color:#fff; overflow: hidden;}
+.l_team_intro_cell{  margin:0 85px;  height:220px; border-radius: 10px; text-indent: 0; background-color:#fff; overflow: hidden;}
+.l_team_intro_cell_item{width: 100%;}
 .l_team_intro_img{ float: left; width:200px; height:220px; }
 .l_team_intro_txt{ margin:30px 64px 0 230px; }
 .l_team_intro_name{ font-size:24px;}

@@ -321,14 +321,28 @@
         }
     });
 
-    /*
-     * 资讯详情 杂志切换
-     * */
+
 
     if ($.jCarouselLite) {
+
+        /*
+         * 资讯详情 杂志切换
+         * */
         $(".c_sider_slider").jCarouselLite({
             btnNext: ".c_slider_box .c_btn_next",
             btnPrev: ".c_slider_box .c_btn_prev",
+            speed: 500,
+            visible: 1
+        });
+
+        /*
+        * 11专业理财.html 团队切换
+        * */
+        $(".l_team_intro_cell").jCarouselLite({
+            containerSelector:'.l_team_intro_cell_box',
+            itemSelector:'.l_team_intro_cell_item',
+            btnNext: ".l_team_intro_list .l_page_left",
+            btnPrev: ".l_team_intro_list .l_page_right",
             speed: 500,
             visible: 1
         });
