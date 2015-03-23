@@ -210,7 +210,7 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_fund_banner img{ height:680px; }
 .c_fund_single{ margin-top:-486px; position:relative; z-index:999; min-height:500px; }
 .c_fund_single .c_fund_list{ margin-bottom:0; border-bottom:none; }
-.c_fund_single .c_fund_body{ background-color:#fff; border:1px solid #e5e5e5; min-height:810px; border-top:none; }
+.c_fund_single .c_fund_body{ background-color:#fff;  min-height:810px; border-top:none; }
 .c_single_top{ overflow:hidden; color:#fff; margin-bottom:80px; }
 .c_single_top .c_title{ font-size:56px; text-shadow:0 2px 5px rgba(0, 0, 0, .2); padding-bottom:5px; }
 .c_single_top .c_title2{ font-size:20px; }
