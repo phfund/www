@@ -68,6 +68,7 @@
             },
             bind: function () {
                 var contents = this.contents,
+                    items = this.items,
                     options = this.options,
                     callback = options.callback;
                 this.items.bind(options.events, function (evt) {
@@ -79,7 +80,12 @@
                             $(item, options.container).hide();
                         }
                     });
-                    $(this).addClass(options.activeClass).siblings().removeClass(options.activeClass);
+
+                    $.each(items, function (index, item) {
+                        $(item).removeClass(options.activeClass);
+                    })
+
+                    $(this).addClass(options.activeClass).siblings();
                     if (!!callback) {
                         callback(href);
                     }
@@ -108,8 +114,15 @@
     $.gui.tabs = tabs;
 })(window, window.document);
 
-
 (function (window, document, undefined) {
+
+
+    //fixme 测试用
+    $('.h_search_box .h_input').bind('keyup', function () {
+
+        $('.h_search_box .h_drop_menu').show();
+
+    });
 
 
     /*
@@ -123,12 +136,7 @@
         return !1;
     });
 
-    //fixme 测试用
-    $('.h_search_box .h_input').bind('keyup', function () {
 
-        $('.h_search_box .h_drop_menu').show();
-
-    });
 
     /*
      * 首页 基金tab 置顶
@@ -139,16 +147,16 @@
             table_head = $('.c_fund_list .c_fd_th'), //41
             table = $('.c_fd_table'),
             table_body = $('.c_fd_body'),
+            last_item = $('.c_fd_table .c_ul:last-child'),
             list = $('.c_fund_list');
 
-        if (list.length == 0) {
+        if (list.length == 0 || last_item.length == 0) {
             return !1;
         }
 
         var list_offset = list.offset(),
             list_offset_top = list_offset.top,
             list_offset_left = list_offset.left,
-            last_item = $('.c_fd_table .c_ul:last-child'),
             last_item_offset = last_item.offset(),
             last_item_offset_top = last_item_offset.top
             ;
@@ -270,7 +278,7 @@
     /**
      * 返回顶部
      * **/
-    $('.l_right_banner').on('click', '.l_icon_box', function () {
+    $('.l_right_banner .l_icon_box').bind('click', function () {
         if ($(this).index() == 3) {
             $(window).scrollTop(0);
         }
@@ -313,11 +321,13 @@
         }
     });
 
-    /*
-     * 资讯详情 杂志切换
-     * */
 
-    if($.jCarouselLite){
+
+    if ($.jCarouselLite) {
+
+        /*
+         * 资讯详情 杂志切换
+         * */
         $(".c_sider_slider").jCarouselLite({
             btnNext: ".c_slider_box .c_btn_next",
             btnPrev: ".c_slider_box .c_btn_prev",
@@ -325,13 +335,27 @@
             visible: 1
         });
 
+        /*
+        * 11专业理财.html 团队切换
+        * */
+        $(".l_team_intro_cell").jCarouselLite({
+            containerSelector:'.l_team_intro_cell_box',
+            itemSelector:'.l_team_intro_cell_item',
+            btnNext: ".l_team_intro_list .l_page_left",
+            btnPrev: ".l_team_intro_list .l_page_right",
+            speed: 500,
+            visible: 1
+        });
+
     }
 
-
+    /*
+     * tabs切换
+     * */
 
     /*
-    * tabs切换
-    * */
+     * 首页 基金 tabs
+     * */
 
     $.gui.tabs({
         container: '.c_page', //tab 最外层的 selector
@@ -340,6 +364,20 @@
         activeClass: 'active',// tabElem 选中的 className
         events: 'click', //切换事件, 默认点击
         callback: null // 切换回调
-    })
+    });
+
+    /*
+     * 00客户中心_2_00_鹏博士问答_常见问题-热点问题_tabs切换_实例.html
+     * 基金详情页
+     * */
+
+    $.gui.tabs({
+        container: '.c_fund_list', //tab 最外层的 selector
+        top: '.c_top', //包裹 topElem 的 selector
+        topElem: 'a', //点击的元素 ,一定要有 href 属性, 对应切换容器的 id
+        activeClass: 'active',// tabElem 选中的 className
+        events: 'click', //切换事件, 默认点击
+        callback: null // 切换回调
+    });
 
 })(window, window.document)
