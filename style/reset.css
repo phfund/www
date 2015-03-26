@@ -49,25 +49,27 @@ input::-ms-clear{ display:none; }
 
 .h_logo{ background-image:url(images/ico_logo.png); width:176px; height:41px; float:left; margin:14px 0 0 30px; display:inline; }
 
-.h_nav{ float:left; padding:3px 40px 0 0px; }
+.h_nav{ float:left; padding:3px 40px 0 0px; width:625px;}
 .h_nav .h_item{ float:left; padding:0 10px; }
-.h_nav .h_item a{ display:block; height:72px; line-height:72px; color:#fff; font-size:16px;  padding:0 18px; }
+.h_nav .h_item a{ float:left; height:72px; line-height:72px; color:#fff; font-size:16px;  padding:0 18px; }
 .h_nav .h_item a:hover,
 .h_nav .h_item .active,
 .h_nav .h_item a:hover .c_red,
 .h_nav .h_item .active .c_red
 { color:#fff!important; background-color:#ff1f35; }
 
-.h_search{ background-image:url(images/ico_search.png); width:20px; height:19px; float:left; margin:28px 25px 28px 25px; opacity:.5; }
+.h_search{ background-image:url(images/ico_search.png); width:20px; height:19px; float:left; margin:28px 25px 28px 25px; opacity:.5; cursor:pointer;}
 .h_search:hover{ opacity:1; }
 .h_search_box{ background-color:#fff; width:0px; height:42px;border-radius:21px; position:absolute; top:57px; left:877px;z-index: 12;  -webkit-transition:width .2s cubic-bezier(0.25, .5, .5, .9)}
-.h_search_inner{ overflow:hidden;}
-.h_search_box.active{ width:323px;}
-.h_search_box.active .h_ico_search{ display:block;}
-.h_search_box .h_input{ font-size:14px; border:none; height:42px; margin:0 0 0 25px;border-radius:20px; width:259px;}
+.h_search_inner{ overflow:hidden; display:none;}
 .h_search_box .h_ico_search{ cursor:pointer; color:#000; position:absolute; right:3px; top:3px; width:36px; height:36px; background-image:url(images/h_ico_search.png); display:none;}
+
+.h_search_box_active{ width:323px;}
+.h_search_box_active .h_ico_search,.h_search_box_active .h_search_inner{ display:block;}
+.h_search_box .h_input{ font-size:14px; border:none; height:42px; margin:0 0 0 25px;border-radius:20px; width:259px; background-color:transparent; border-width:0; line-height:42px;}
 .h_search_box .h_ico_search:hover{ background-color:#ff1f35;border-radius:18px; background-image:url(images/h_ico_search_hover.png);}
 .h_drop_menu{ width:323px; display:none; position:absolute; top:51px; background-color:#fff; box-shadow: 0 2px 3px rgba(0,0,0,.3);left: 0; line-height:40px; font-size:14px; padding:5px 0;}
+.h_drop_menu .h_item{ height:40px; float:left;width: 100%;}
 .h_drop_menu a{ padding-left:25px; display:block; color:#626262;}
 .h_drop_menu a:hover{ background-color:#f4f4f4;}
 .h_drop_menu b{ color:#222; }
@@ -87,7 +89,7 @@ input::-ms-clear{ display:none; }
 -moz-transition:background-position .2s cubic-bezier(0.25, .5, .5, .9);
 transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
 
-.h_switch_btn.active{ background-image:url(images/ico_h_to_pc.png); }
+.h_login .active{ background-image:url(images/ico_h_to_pc.png); }
 
 .h_login_inner{ padding:20px 30px 0; }
 .h_ico_member{ background-image:url(images/ico_member.png); width:15px; height:19px; display:inline-block; }
@@ -120,10 +122,10 @@ transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
 .h_login_forget a:hover{ color:#fff; }
 .h_login_forget .h_item{ width:33%; float:left; text-align:center; padding:0; border-left:1px solid #fff; }
 .h_login_forget .h_item:first-child{ border:none; margin-left:-1px; }
-.h_notice{ }
-.h_notice a{ color:#c5c5c5; display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:14px; }
+.h_notice{ overflow:hidden; }
+.h_notice a{ color:#c5c5c5; float:left; display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:14px; }
 .h_notice a:hover{ color:#ff1f35; }
-.h_notice .h_item{ line-height:24px; }
+.h_notice .h_item{ line-height:24px; height:24px; float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:240px;}
 
 .h_login_qr_title{ font-size:24px; color:#fff; text-align:center; margin:14px 0 45px; }
 .h_login_qrcode{ text-align:center; margin-bottom:34px; }

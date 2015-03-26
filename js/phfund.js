@@ -130,13 +130,16 @@
      * */
 
     $('.h_search').bind('click', function () {
-        $('.h_search_box').addClass('active');
+        $('.h_search_box').addClass('h_search_box_active');
         $('.h_search_box .h_input').focus();
 
         return !1;
     });
 
-
+    $('.h_search_box .h_input').blur(function () {
+        //$('.h_search_box').removeClass('h_search_box_active');
+        //$('.h_search_box .h_drop_menu').hide();
+    });
 
     /*
      * 首页 基金tab 置顶
