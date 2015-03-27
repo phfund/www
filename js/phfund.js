@@ -124,7 +124,6 @@
 
     });
 
-
     /*
      * 头部搜索
      * */
@@ -143,43 +142,46 @@
 
     /*
      * 首页 基金tab 置顶
+     *
+     * ie6+
      * */
+    if ($.browser.msie && $.browser.version > 7) {
+        $(window).bind('scroll', function () {
+            var tab_top = $('.c_fund_list .c_top'), //60
+                table_head = $('.c_fund_list .c_fd_th'), //41
+                table = $('.c_fd_table'),
+                table_body = $('.c_fd_body'),
+                last_item = $('.c_fd_table .c_ul:last-child'),
+                list = $('.c_fund_list');
 
-    $(window).bind('scroll', function () {
-        var tab_top = $('.c_fund_list .c_top'), //60
-            table_head = $('.c_fund_list .c_fd_th'), //41
-            table = $('.c_fd_table'),
-            table_body = $('.c_fd_body'),
-            last_item = $('.c_fd_table .c_ul:last-child'),
-            list = $('.c_fund_list');
+            if (list.length == 0 || last_item.length == 0) {
+                return !1;
+            }
 
-        if (list.length == 0 || last_item.length == 0) {
-            return !1;
-        }
+            var list_offset = list.offset(),
+                list_offset_top = list_offset.top,
+                list_offset_left = list_offset.left,
+                last_item_offset = last_item.offset(),
+                last_item_offset_top = last_item_offset.top
+                ;
 
-        var list_offset = list.offset(),
-            list_offset_top = list_offset.top,
-            list_offset_left = list_offset.left,
-            last_item_offset = last_item.offset(),
-            last_item_offset_top = last_item_offset.top
-            ;
+            scroll_top = $(window).scrollTop();
 
-        scroll_top = $(window).scrollTop();
+            if (scroll_top > list_offset_top) {
 
-        if (scroll_top > list_offset_top) {
+                list.addClass('active');
+                tab_top.css('left', list_offset_left + 1);
+                table_head.css('left', list_offset_left + 1);
+            } else {
+                list.removeClass('active');
+            }
 
-            list.addClass('active');
-            tab_top.css('left', list_offset_left + 1);
-            table_head.css('left', list_offset_left + 1);
-        } else {
-            list.removeClass('active');
-        }
+            if (last_item_offset_top <= scroll_top) {
+                list.removeClass('active');
+            }
 
-        if (last_item_offset_top <= scroll_top) {
-            list.removeClass('active');
-        }
-
-    })
+        })
+    }
 
     /*
      * 登陆框切换*/
@@ -324,8 +326,6 @@
         }
     });
 
-
-
     if ($.jCarouselLite) {
 
         /*
@@ -339,11 +339,11 @@
         });
 
         /*
-        * 11专业理财.html 团队切换
-        * */
+         * 11专业理财.html 团队切换
+         * */
         $(".l_team_intro_cell").jCarouselLite({
-            containerSelector:'.l_team_intro_cell_box',
-            itemSelector:'.l_team_intro_cell_item',
+            containerSelector: '.l_team_intro_cell_box',
+            itemSelector: '.l_team_intro_cell_item',
             btnNext: ".l_team_intro_list .l_page_left",
             btnPrev: ".l_team_intro_list .l_page_right",
             speed: 500,
