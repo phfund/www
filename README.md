@@ -18,6 +18,14 @@
 #####IEDevToolBar
 
 
+###ie6 fix
+
+####png24fix
+```
+<!--[if lt IE 7]>
+<script type="text/javascript" src="js/unitpngfix.js"></script>
+<![endif]-->
+```
 ### l-
 
  1. 4.1分级英雄_视频资料.html
