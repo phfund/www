@@ -383,4 +383,19 @@
         callback: null // 切换回调
     });
 
+
+ /*
+     *7股票型_基金主页.html
+     * 基金收益走势图
+     * */
+
+    $.gui.tabs({
+        container: '.c_fund_chart_wrap', //tab 最外层的 selector
+        top: '.c_f_c_tab', //包裹 topElem 的 selector
+        topElem: 'a', //点击的元素 ,一定要有 href 属性, 对应切换容器的 id
+        activeClass: 'active',// tabElem 选中的 className
+        events: 'click', //切换事件, 默认点击
+        callback: null // 切换回调
+    });
+
 })(window, window.document)
