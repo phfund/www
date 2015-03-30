@@ -266,11 +266,11 @@
             _right = (_width - 1200) / 2 - 55;
         }
         _banner.css('right', _right + 'px');
-        if (_top < 200) {
+        //console.log(_top < 500)
+        if (_top < 590) {
             _banner.stop().animate({'top': (590 - _top) + 'px'}, _time);
         } else {
-            var _sTop= $(window).scrollTop() + 100 + 'px';
-            _banner.stop().animate({'top': _sTop}, _time);
+            _banner.stop().animate({'top': '10px'}, _time);
         }
 
     });
@@ -379,15 +379,5 @@
         events: 'click', //切换事件, 默认点击
         callback: null // 切换回调
     });
-
-    /**专业理财 开户流程,网上直销交易流程**/
-
-    $('.l_flow_box .action_flow').bind('click',function(){
-        var _index = $(this).index(),
-            _cells = $(this).parents('.l_flow_box').children('.l_flow_box_dialog').children('.l_flow_dialog_cell');
-        _cells.hide();
-        _cells.eq(_index).show();
-    });
-
 
 })(window, window.document)

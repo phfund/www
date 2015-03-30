@@ -11,6 +11,21 @@
 3. `.active{}` `.selected{}` 可以使用，但必须有父class `.c-abc .active{}`
 
 
+###debug
+#####firebug-lite
+`<script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script>`
+
+#####IEDevToolBar
+
+
+###ie6 fix
+
+####png24fix
+```
+<!--[if lt IE 7]>
+<script type="text/javascript" src="js/unitpngfix.js"></script>
+<![endif]-->
+```
 ### l-
 
  1. 4.1分级英雄_视频资料.html
