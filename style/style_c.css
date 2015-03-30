@@ -1,3 +1,4 @@
+.c_paddingless{ padding:0 !important; }
 .c_ico{ background-repeat:no-repeat; }
 .c_arrow_bottom_white{ background-image:url(images/ico_arrow_down_white.png); width:10px; height:6px; }
 .c_arrow_down_outline{ background-image:url(images/ico_arrow_down_outline.png); width:24px; height:24px; }
@@ -210,8 +211,9 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_fund_banner{ height:680px; }
 .c_fund_banner img{ height:680px; }
 .c_fund_single{ margin-top:-486px; position:relative; z-index:999; min-height:500px; }
-.c_fund_single .c_fund_list{ margin-bottom:0;  }
-.c_fund_single .c_fund_body{ background-color:#fff; min-height:810px; border-top:none; padding:0 50px 60px;}
+.c_fund_single .c_fund_list{ margin-bottom:0; }
+.c_fund_single .c_fund_body{ background-color:#fff; min-height:700px; border-top:none; padding:0 50px 60px; }
+.c_fund_single .c_fund_body .c_expender{ line-height:30px; font-size:14px; color:#808080; margin-top:20px;}
 .c_fund_notice{ padding-left:15px; font-size:16px; color:#ff1f35; background-color:#f6c7be; height:60px; line-height:60px; overflow:hidden; }
 .c_fund_notice .c_ico_notice{ background-image:url(images/ico_notice_hover.png); width:18px; height:18px; display:inline-block; vertical-align:middle; margin-right:15px; }
 .c_fund_notice .c_ico_close{ background-image:url(images/ico_close.png); width:12px; height:12px; float:right; cursor:pointer; position:relative; display:inline; margin:24px; }
@@ -636,7 +638,7 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_master .c_m_box{ border-bottom:1px dashed #e5e5e5; padding-bottom:35px; line-height:28px; }
 .c_master .c_img{ float:left; padding:0 40px 0 0; }
 .c_master .c_img img{ display:block; width:200px; height:220px; }
-.c_master .c_m_body{ overflow:hidden; font-size:14px;min-height:220px;_height:220px; }
+.c_master .c_m_body{ overflow:hidden; font-size:14px; min-height:220px; _height:220px; }
 .c_master .c_top_links{ padding:0px 0 28px; }
 .c_master .c_top_links .c_ul{ display:inline; }
 .c_master .c_top_links .c_item{ display:inline; padding:0 12px; position:relative; white-space:nowrap; }
@@ -644,7 +646,7 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_master .c_top_links .c_item:last-child:after{ display:none; }
 .c_master .c_top_links .c_item a{ color:#ff1f35; }
 .c_master .c_title1{ overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:18px; padding-bottom:9px; }
-.c_master .c_p{ color:#808080; }
+.c_master .c_p{ color:#808080; padding-bottom:20px; }
 .c_master .c_b_list .c_item{ overflow:hidden; }
 .c_master .c_m_list{ font-size:14px; padding:28px 0; border-bottom:1px dashed #e5e5e5; }
 .c_master .c_m_list .c_item{ overflow:hidden; line-height:27px; }
@@ -657,59 +659,70 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_charity_bottom .c_t1{ float:left; font-size:14px; color:#808080; }
 .c_charity_bottom .c_t2{ background-image:url(images/ico_weibo_follow.jpg); width:62px; height:22px; float:left; display:inline; margin:8px 30px 0 10px; }
 .c_charity_bottom .c_t3{ float:left; margin:-10px 0 0 10px; }
-.c_videos{ text-indent:0; margin:0 -40px 0 -54px;}
+.c_videos{ text-indent:0; margin:0 -40px 0 -54px; }
 .c_videos .c_red{ height:30px; line-height:30px; }
 .c_videos .c_contxt{ line-height:25px; color:#9c9c9c; }
 .c_videos .c_title3{ font-size:18px; font-weight:normal; color:#212121; width:415px; height:26px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; padding-bottom:10px; }
-.c_videos .c_right{ overflow:hidden;padding:0 0 0 50px; font-size:14px; }
+.c_videos .c_right{ overflow:hidden; padding:0 0 0 50px; font-size:14px; }
 .c_videos .c_img{ float:left; width:220px; height:220px; }
 .c_videos .c_img img{ width:220px; height:220px; }
-.c_videos .c_item{ border-bottom:1px dashed #dadada; padding:37px 0 35px 35px; overflow:hidden; display:block;}
-.c_videos .c_item:hover{ box-shadow: 0 2px 4px rgba(0,0,0,.2);}
-.c_videos .c_item .c_share{ text-align:left; display:none; padding-top:12px;}
-.c_videos .c_item:hover .c_share{ display:block;}
-.c_videos .c_item_end { border:none; border-width:0;}
+.c_videos .c_item{ border-bottom:1px dashed #dadada; padding:37px 0 35px 35px; overflow:hidden; display:block; }
+.c_videos .c_item:hover{ box-shadow:0 2px 4px rgba(0, 0, 0, .2); }
+.c_videos .c_item .c_share{ text-align:left; display:none; padding-top:12px; }
+.c_videos .c_item:hover .c_share{ display:block; }
+.c_videos .c_item_end{ border:none; border-width:0; }
+.c_fund_nav{ padding:15px 0; }
+.c_fund_nav .c_page_nav{ float:left; width:679px; padding:10px 0 0; font-size:14px; }
+.c_fund_nav .c_input_box{ float:left; }
+.c_fund_nav .c_input{ border:1px solid #e5e5e5; font-size:13px; height:36px; padding:0 12px; background-color:#fafafa; margin-right:20px; font-size:14px; color:#888; }
+.c_fund_info2{ padding:40px 0; border-bottom:1px dashed #e5e5e5; }
+.c_fund_info2 .c_item{ float:left; font-size:14px; line-height:38px; width:49%; }
+.c_fund_p_title{ font-size:18px; margin:40px 0 25px; }
+.c_fund_p_title .c_small{ font-size:13px; color:#808080; }
+.c_fund_p_title .c_data_picker{ position:relative; top:-9px; }
+.c_fund_results{ padding:40px 0; border-bottom:1px dashed #e5e5e5; margin-bottom:30px; }
+.c_f_r_row{ position:relative; padding-bottom:30px; }
+.c_f_r_row .c_item{ float:left; color:#808080; width:124px; padding:0 0 0 18px; position:relative; }
+.c_f_r_row .c_t1{ font-size:13px; padding-bottom:9px; }
+.c_f_r_row .c_t2{ font-size:20px; }
+.c_f_r_row .c_red{ font-size:24px; }
+.c_f_r_row .c_line{ position:absolute; right:0; top:12px; height:24px; border-left:1px solid #e5e5e5; }
+.c_fund_chart_wrap{ font-size:14px; }
+.c_fund_chart_wrap .c_f_c_tab{ border-bottom:1px solid #e6e6e6; }
+.c_fund_chart_wrap .c_f_c_tab .c_item{ color:#808080; border-bottom:2px solid #fff; float:left; padding:0 12px; cursor:pointer; }
+.c_fund_chart_wrap .c_f_c_tab .active{ color:#222; border-bottom:2px solid #ff1f35 }
+.c_fund_chart_body2{ padding-bottom:18px; display:none; }
+.c_fund_news, .c_fund_box, .c_fund_box2{ font-size:14px; margin:0 0 40px; padding-bottom:30px; border-bottom:1px dashed #e5e5e5; }
+.c_fund_box2{ border-bottom:none; padding-bottom:0; margin:0; }
+.c_fund_box .c_pager, .c_fund_box2 .c_pager{ padding:50px 0 30px; }
+.c_fund_news .fl{ overflow:hidden; text-overflow:ellipsis; width:500px; }
+.c_fund_news .c_item{ height:32px; }
+.c_f_table{ width:100%; font-size:14px; text-align:center; border-collapse:collapse;
+border-spacing:0; }
+.c_f_table th{ color:#808080; height:44px; line-height:44px; border:1px solid #f0f0f0; font-weight:normal; white-space:nowrap;}
+.c_f_table td{ height:40px; line-height:40px; border:1px solid #f0f0f0; }
+.c_f_table .c_tl{ text-align:left; padding:0 15px 0 20px; }
+.c_f_table .c_red{ font-size:14px !important; }
+.c_f_table_product_detail{ text-align:left; }
+.c_f_table_product_detail th{ padding:0 0 0 28px; width:146px; vertical-align:top; color:#222; font-weight:normal; }
+.c_f_table_product_detail td{ padding:9px 0 9px 20px; line-height:28px; height:auto; vertical-align:top; color:#808080; }
+.c_data_picker{ float:right; }
+.c_data_picker .c_item{ background-color:#fff; border:1px solid #e5e5e5; float:left; height:38px; width:148px; display:inline; margin:0 0 0 20px; }
+.c_data_picker .c_item .c_ico_date{ float:left; background-image:url(images/ico_date.png); width:16px; height:16px; display:inline; margin-top:9px; }
+.c_data_picker .c_input{ border:none; border-width:0; background-color:#fff; padding-left:25px; height:38px; line-height:38px; width:98px; float:left; }
+.c_fund_rate{ padding:20px 0 0; line-height:30px; }
+.c_f_table_rate th{ vertical-align:top; padding:15px 0 0; line-height:1; }
+.c_f_table_rate th p{ padding:11px 0; }
+.c_fund_body .c_input_box{ padding:0 15px; border:1px solid #e5e5e5; background-color:#fafafa; height:28px; line-height:28px; font-size:14px; }
+.c_fund_rate_2{ }
+.c_fund_rate_2 .c_grey{ padding:9px 0 24px; }
+.c_fund_rate_2 .c_fund_row{ font-size:14px; margin:0 50px; }
+.c_fund_rate_2 .c_col{ float:left; width:49%; }
+.c_fund_notice_wrap{ }
+.c_fund_notice_wrap .c_top{ border:none; padding:40px 0 30px; }
+.c_fund_notice_wrap .c_top_form{ float:left; width:450px; color:#808080; }
+.c_fund_notice_wrap .c_title{ width:70px; margin-right:23px; }
+.c_fund_notice_wrap .c_date{ width:60px; }
 
-.c_fund_nav{ padding:15px 0;}
-.c_fund_nav .c_page_nav{ float:left; width:679px; padding:10px 0 0; font-size:14px;}
-.c_fund_nav .c_input_box{ float:left;}
-.c_fund_nav .c_input{ border:1px solid #e5e5e5; font-size:13px; height:36px; padding:0 12px; background-color:#fafafa; margin-right:20px; font-size:14px; color:#888;}
-
-
-
-
-
-.c_fund_info2 { padding:40px 0; border-bottom:1px dashed #e5e5e5;}
-.c_fund_info2 .c_item{ float:left; font-size:14px; line-height:38px;width: 49%;}
-
-.c_fund_p_title{ font-size:18px; margin:40px 0 25px;}
-.c_fund_p_title .c_small{ font-size:13px; color:#808080;}
-
-.c_fund_results{ padding:40px 0; border-bottom:1px dashed #e5e5e5; margin-bottom:30px;}
-.c_f_r_row { position:relative; padding-bottom:30px;}
-.c_f_r_row .c_item{ float:left; color:#808080; width:124px; padding:0 0 0 18px; position:relative;}
-.c_f_r_row .c_t1{ font-size:13px; padding-bottom:9px;}
-.c_f_r_row .c_t2{ font-size:20px;}
-.c_f_r_row .c_red{ font-size:24px;}
-.c_f_r_row .c_line{ position:absolute;right: 0; top:12px; height:24px; border-left:1px solid #e5e5e5;}
-
-
-
-.c_fund_chart_wrap{ font-size:14px;}
-.c_fund_chart_wrap .c_f_c_tab{border-bottom:1px solid #e6e6e6;}
-.c_fund_chart_wrap .c_f_c_tab .c_item{ color:#808080;border-bottom:2px solid #fff; float:left; padding:0 12px; cursor:pointer;}
-.c_fund_chart_wrap .c_f_c_tab .active{ color:#222;border-bottom:2px solid #ff1f35}
-
-.c_fund_chart_body2{ padding-bottom:18px; display:none;}
-
-.c_fund_news{ font-size:14px; margin:0 0 40px; padding-bottom:30px;border-bottom:1px dashed #e5e5e5;}
-.c_fund_news .fl{ overflow:hidden;text-overflow:ellipsis; width:500px;}
-.c_fund_news .c_item{ height:32px;}
-
-
-
-.c_f_table{width: 100%; font-size:14px; text-align:center;  border-collapse: collapse;
-border-spacing: 0;}
-.c_f_table th{ color:#808080; height:44px; line-height:44px; border:1px solid #f0f0f0;}
-.c_f_table td{ height:40px; line-height:40px;border:1px solid #f0f0f0;}
-.c_f_table .c_red{ font-size:14px!important;}
+.c_f_table_dot td{ padding:13px!important; line-height:28px; vertical-align:top;}
+.c_f_table_dot .c_tl{ width:130px;}
