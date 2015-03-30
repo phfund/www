@@ -149,9 +149,9 @@
 .c_fund_list .c_fund_ul .c_item a{ display:block; margin:0 6px; color:#444; border-radius:18px; }
 .c_fund_list .c_fund_ul .c_item a:hover, .c_fund_list .c_fund_ul .c_item .active{ color:#fff; background-color:#ff0000; }
 .c_fd_table{ background-color:#fff; }
-.c_fd_th{ overflow:hidden; line-height:38px; text-align:center; border-bottom:1px solid #e5e5e5; display:table;width: 100%;}
-.c_fd_th .c_item{ color:#a6a6a6; cursor:pointer; display:table-cell;}
-.c_fd_th .c_item:hover{ color:#ff0000; }
+.c_fd_th{ overflow:hidden; line-height:38px; text-align:center; border-bottom:1px solid #e5e5e5; display:table-row;width: 100%;}
+.c_fd_th .c_item{ color:#a6a6a6; display:table-cell;}
+.c_fd_th .c_item:after{ display:none;}
 .c_fd_th .c_item:hover .c_arrow_bottom{ background-image:url(images/ico_arrow_bottom_red.png); }
 .c_fd_th .active .c_arrow_bottom{ transform:rotate(180deg); }
 .c_w200{ width:200px; }
@@ -164,6 +164,7 @@
 .c_fd_table .c_fd_body a:hover{ text-decoration:underline; }
 .c_fd_table .c_fd_body .c_item:nth-child(2){ font-size:16px; color:#ff0000; }
 .c_fd_table .c_fd_body .c_item:first-child{ text-indent:-1em; border-right:1px solid #e5e5e5; color:#555; }
+.c_fd_table .c_fd_body .c_item:first-child{}
 .c_fd_table .c_fd_body .c_item{ text-align:center; height:60px;  line-height:60px; border-bottom:1px solid #e5e5e5; position:relative; display:table-cell;}
 .c_fd_table .c_fd_body .c_item .c_button{ _margin-top:10px; }
 .c_fd_list .c_item:nth-child(1):after,
@@ -405,7 +406,7 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_fdll_table .c_ul:hover{ box-shadow:0 2px 3px rgba(0, 0, 0, .2); }
 .c_fdll_table .c_ul:hover .c_button{ background-color:#ff1f35; color:#fff; }
 .c_fdll_table .c_ul:hover .c_item:after{ display:none; }
-.c_fdll_table .c_ul:hover .c_item:first-child{ border-color:transparent; }
+.c_fdll_table .c_ul:hover .c_item:first-child{ border-left-color:transparent; }
 .c_nav{ height:40px; line-height:40px; margin-bottom:22px; border:1px solid #ebebeb; background-color:#fff; }
 .c_nav .c_nav_ul{ overflow:hidden; width:1200px; margin:0 auto; }
 .c_nav .c_item{ float:left; padding:0 16px; position:relative; }
