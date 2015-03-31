@@ -551,3 +551,18 @@
 .l_zzb_flow_step .l_zzb_step05{ width: 192px; margin-left:60px;}
 .l_privilege_list .l_zzb_cell{ border-right:0;}
 .l_height_560{ *height:560px;}
+
+.l_text{ padding-top:40px; font-size:15px; color: #666; line-height: 30px;}
+.l_text .l_color_grey{ color: #212121;}
+.l_text .l_text_right{ text-align: right;}
+.l_text .l_text_line{ border-top:1px dashed #e5e5e5; padding-top:40px;}
+.l_text .l_text_img{ text-align: center;}
+.l_text_table{ width:100%; margin: 40px auto; border-top:1px solid #d2d2d2; border-left: 1px solid #d2d2d2;}
+.l_text_table td{ border-right:1px solid #d2d2d2; border-bottom: 1px solid #d2d2d2; padding:10px;}
+.l_text_table .l_td_01{ width:155px;}
+.l_text_table .l_td_02{ width:385px;}
+.l_text_table .l_td_03{ width:144px;}
+.l_text_table .l_td_04{ width:143px;}
+.l_text_table .l_td_05{ width:145px;}
+.l_text_table thead td{ color: #808080; text-align: center;}
+.l_text_table .l_size_14{ color: #808080;}
