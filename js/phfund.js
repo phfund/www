@@ -380,4 +380,17 @@
         callback: null // 切换回调
     });
 
+
+    /*
+    * 头部轮播图
+    * */
+
+    $("#slider").responsiveSlides({
+        auto: !1,
+        pager: !0,
+        nav: !1,
+        speed: 500,
+        namespace: "slide"
+    });
+
 })(window, window.document)

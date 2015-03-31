@@ -87,11 +87,16 @@ input::-ms-clear{ display:none; }
 .h_explor .h_subtitle{ color:#fff; display:block; }
 .h_explor .h_ico_arrow_right_outline{ background-image:url(images/ico_arrow_right_outline.png); width:24px; height:24px; position:absolute; right:0; top:9px; }
 
-.h_banner{ height:580px; overflow:hidden; width:100%; }
+.h_banner{ height:580px; overflow:hidden; width:100%; position:relative;}
+.h_banner .h_item{ height:580px;width: 100%;}
 .h_banner img{ height:580px; display:block; }
+.h_banner .slide_tabs{ position:absolute; left:50%; bottom:12px;z-index: 999;}
+.h_banner .slide_tabs li{ float:left; padding:0 5px;}
+.h_banner .slide_tabs a{ display:block; width:12px; height:12px; background-color:#fff; opacity:.5;filter:alpha(opacity=50);border-radius:6px; overflow:hidden; text-indent:-99px;}
+.h_banner .slide_tabs .slide_here a{ opacity:.9;filter:alpha(opacity=90);}
 
 .h_login_box{ position:relative; width:1200px; height:0; margin:0 auto;}
-.h_login{ position:absolute; width:300px; height:400px;right:0; top:130px; background-image:url(images/bg_login.png);}
+.h_login{ position:absolute; width:300px; height:400px;right:0; top:130px; background-image:url(images/bg_login.png);z-index: 999;}
 .h_switch_btn{ background-image:url(images/ico_h_to_qr.png); width:45px; height:45px; position:absolute; top:0; right:0; cursor:pointer; -webkit-transition:background-position .2s cubic-bezier(0.25, .5, .5, .9);
 -moz-transition:background-position .2s cubic-bezier(0.25, .5, .5, .9);
 transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
