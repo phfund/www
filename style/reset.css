@@ -11,7 +11,7 @@ s, em, i{ font-style:normal; }
 input::-ms-clear{ display:none; }
 :focus{ outline:none; }
 .clear{ clear:both; }
-.fl{ float:left; }
+.fl{ float:left!important; }
 .fr{ float:right !important; }
 .tc{ text-align:center;}
 .vam{ display:inline-block; vertical-align:middle;_zoom:1;*display:inline; }
