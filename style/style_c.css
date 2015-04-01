@@ -17,6 +17,9 @@
 .c_green{ color:#299f55; }
 .c_button{ color:#fff; border:none; background-color:#ff1f35; height:36px; line-height:36px; text-align:center; min-width:90px; _width:90px; font-size:14px; display:inline-block; border-radius:18px; text-indent:0; }
 .c_button:hover{ background-color:#d82736; color:#fff; }
+
+.c_disabled,.c_disabled:hover{ background-color:#878787; cursor:default;}
+
 .c_ico_right{ position:relative; }
 .c_ico_right .c_ico{ position:absolute; top:50%; right:20px; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); }
 .c_top_grid{ position:relative; margin-bottom:20px; border-bottom:1px solid #e5e5e5; }
@@ -439,6 +442,8 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_search_drop_menu .c_item, .c_search_drop_menu .c_red{ font-size:18px; }
 .c_search_drop_menu .c_item:hover{ background-color:#f4f4f4; }
 .c_search_body{ min-height:180px; }
+.c_search_tab { background-color:#fff; border:1px solid #e5e5e5; border-bottom:none; padding:10px 20px;}
+.c_search_tab .c_item{ float:left; padding:0 25px 0 0;}
 .c_search_empty{ font-size:30px; text-align:center; color:#c9cfd3; vertical-align:middle; }
 .c_ico_search_tip{ display:inline-block; background-image:url(images/ico_search_tip.png); width:118px; height:109px; vertical-align:middle; }
 .c_search_main{ width:900px; float:left; }
