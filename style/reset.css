@@ -10,7 +10,15 @@ a, a:hover, s{ text-decoration:none; }
 s, em, i{ font-style:normal; }
 input::-ms-clear{ display:none; }
 :focus{ outline:none; }
-.clear{ clear:both; }
+.clear{ clear:both; zoom:1;}
+.clear:after {
+ visibility:hidden;
+ display:block;
+ font-size:0;
+ content:" ";
+ clear:both;
+ height:0;
+}
 .fl{ float:left!important; }
 .fr{ float:right !important; }
 .tc{ text-align:center;}
@@ -105,7 +113,7 @@ transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
 
 .h_login_inner{ padding:20px 30px 0; }
 .h_ico_member{ background-image:url(images/ico_member.png); width:15px; height:19px; display:inline-block; }
-.h_ico_notice{ background-image:url(images/ico_notice.png);_filter:~"progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='images/ico_notice.png')"; width:18px; height:18px; }
+.h_ico_notice{ background-image:url(images/ico_notice.png);width:18px; height:18px; }
 
 .h_login_help .h_ico{ width:36px; height:36px; display:inline-block;}
 .h_ico_apps{ background-image:url(images/ico_login_app.png);}
