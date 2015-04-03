@@ -353,8 +353,9 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_page_news_list .c_item .fl{ overflow:hidden; text-overflow:ellipsis; width:567px; }
 .c_page_news_list .c_item .fr{ color:#ff1f35; }
 .c_page_news_list .c_line{ margin:19px 0; border-top:1px dashed #e5e5e5; }
-.c_pager{ text-align:center; padding:22px 0 65px; text-indent:0; font-size:0; }
-.c_pager .c_item{ display:inline-block; width:36px; height:36px; text-align:center; line-height:36px; background-color:#e5e5e5; font-size:12px; vertical-align:middle; border-radius:18px; margin:0 7px; cursor:pointer; padding-bottom:0; }
+.c_pager{ text-align:center; padding:22px 0 65px; text-indent:0; font-size:0;*text-align:center; }
+.c_pagerUl{*padding-left: 200px;}
+.c_pager .c_item{ display:inline-block; width:36px; height:36px; text-align:center; line-height:36px; background-color:#e5e5e5; font-size:12px; vertical-align:middle; border-radius:18px; margin:0 7px; cursor:pointer; padding-bottom:0;*display: inline;*width:36px; *height:36px;*float: left;*text-align:center; }
 .c_pager .active{ background-color:#ff1f35; color:#fff; cursor:default; }
 .c_pager .c_pager_next{ overflow:hidden; background-image:url(images/ico_pager_next.png); }
 .c_pager .c_pager_prev{ overflow:hidden; background-image:url(images/c_pager_prev.png); }
