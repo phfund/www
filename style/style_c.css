@@ -11,7 +11,7 @@
 .c_ico_t2{ background-image:url(images/ico_tool_2.png); width:20px; height:24px; }
 .c_ico_t3{ background-image:url(images/ico_tool_3.png); width:24px; height:25px; }
 .c_ico_t4{ background-image:url(images/ico_tool_4.png); width:24px; height:24px; }
-.container{ width:1200px; margin:0 auto; position:relative; }
+.container{ width:1200px; margin:0 auto; position:relative;_position:relative; }
 .c_red{ color:#ff1f35 !important; font-size:12px; }
 .c_grey{ color:#808080 !important; }
 .c_green{ color:#299f55; }
@@ -205,11 +205,11 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_page_menu_ul .active .c_menu_child{ display:block; }
 .c_page_menu_ul .active .c_menu_item, .c_page_menu_ul .active .c_menu_child a{ padding-left:45px; }
 .c_page_menu_ul .active .c_ico{ background-image:url(images/ico_arrow_down_white.png); width:10px; height:6px; }
-.c_page_content{ overflow:hidden; background-color:#fff; border:1px solid #e5e5e5; min-height:600px; }
+.c_page_content{ overflow:hidden; background-color:#fff; border:1px solid #e5e5e5; min-height:600px; _float: right;}
 .c_page_content .c_title{ font-size:24px; margin:35px 0 5px 25px; padding:0 0 0 24px; border-left:4px solid #ff1f35; position:relative; }
 .c_page_content .c_title2{ color:#ff1f35; margin:0 0 0 54px; }
 .c_page_body .c_title3{ font-size:18px; padding-bottom:14px; color:#333; text-indent:0; }
-.c_page_nav{ padding:20px 0 2px 10px; }
+.c_page_nav{ padding:20px 0 2px 10px;_padding:20px 0 20px 10px; }
 .c_page_nav ul{ overflow:hidden; }
 .c_page_nav li{ float:left; padding:0 16px; position:relative; }
 .c_page_nav li:after{ content:'>'; color:#808080; position:absolute; right:-4px; top:0; }
@@ -575,7 +575,7 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_client_service .c_star_box .c_ico{ display:inline-block; }
 .c_client_body .c_expender .c_content{ color:#808080; }
 .c_page_search{ border:1px solid #e5e5e5; background-color:#fff; padding:0 32px 0 12px; position:absolute; top:12px; right:20px; width:460px; }
-.c_page_search .c_input{ border:none; height:38px; width:100%; }
+.c_page_search .c_input{ border:none; height:38px; width:100%;*height:28px;*padding-top: 10px;_border: 0;height:28px \0;padding-top: 10px \0; }
 .c_page_search .c_ico{ position:absolute; background-image:url(images/h_ico_search.png); width:36px; height:36px; top:1px; right:1px; cursor:pointer; }
 .c_page_sub{ padding-bottom:0; }
 .c_cl_subtop{ padding:30px 0 35px; }
