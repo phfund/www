@@ -434,8 +434,9 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_nav .c_item a:hover{ color:#ff1f35; }
 .c_nav .active a:after{ content:''; position:absolute; bottom:0; left:0; right:0; border-top:3px solid #ff1f35; }
 .c_links{ padding:60px 45px 50px; background-color:#fff; border:1px solid #e5e5e5; }
-.c_links .c_list{ }
+/*.c_links .c_list{ }*/
 .c_links .c_list .c_list_item{ padding:43px 0 20px; border-bottom:1px dashed #e5e5e5; }
+.c_links .c_list .c_list_item.bdNone{border: 0;}
 .c_links .c_list .c_list_item:last-child{ border:none; }
 .c_links .c_title{ font-size:24px; padding-bottom:35px; border-bottom:1px dashed #e5e5e5; }
 .c_links .c_title2{ font-size:18px; padding-bottom:18px; }
@@ -445,12 +446,12 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_links .c_item a:before{ content:'• '; }
 .c_links .c_item a:hover{ color:#ff1f35; }
 .c_search_top{ position:relative; width:784px; margin:0 auto; padding:76px 0; }
-.c_search_top .c_search_input_box{ overflow:hidden; margin-bottom:16px; }
+.c_search_top .c_search_input_box{ overflow:hidden; margin-bottom:16px;_height: 54px; }
 .c_search_top .c_search_input{ width:596px; height:50px; border:2px solid #d2d2d2; border-right:none; float:left; font-size:20px; padding:0 20px;*height: 40px;*padding-top: 10px;height: 40px \0;padding-top: 10px \0; }
 .c_search_top .c_search_btn{ width:146px; height:54px; background-color:#ff1f35; float:left; cursor:pointer; text-align:center; line-height:54px; color:#fff; font-size:18px; }
 .c_search_top .c_ico_search{ background-image:url(images/ico_search_white.png); width:32px; height:31px; display:inline-block; margin-top:9px; }
-.c_search_top .c_search_hot{ }
-.c_search_top .c_search_hot .c_item{ font-size:14px; color:#999; padding:0 15px; display:inline-block; }
+.c_search_top .c_search_hot{padding-bottom: 20px;_height: 22px; }
+.c_search_top .c_search_hot .c_item{ font-size:14px; color:#999; padding:0 15px; display:inline-block;_float: left;_height: 19px;_width: 56px; }
 .c_search_top .c_search_hot .active{ color:#ff1f35; }
 .c_search_drop_menu{ display:none; position:absolute; left:0; top:128px; border:2px solid #d2d2d2; width:636px; background-color:#fff; z-index:999; }
 .c_search_drop_menu .c_item{ height:60px; line-height:60px; padding:0 0 0 20px; }
