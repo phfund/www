@@ -124,7 +124,6 @@
 
     });
 
-
     /*
      * 头部搜索
      * */
@@ -135,8 +134,6 @@
 
         return !1;
     });
-
-
 
     /*
      * 首页 基金tab 置顶
@@ -331,8 +328,6 @@
         }
     });
 
-
-
     if ($.jCarouselLite) {
 
         /*
@@ -346,11 +341,11 @@
         });
 
         /*
-        * 11专业理财.html 团队切换
-        * */
+         * 11专业理财.html 团队切换
+         * */
         $(".l_team_intro_cell").jCarouselLite({
-            containerSelector:'.l_team_intro_cell_box',
-            itemSelector:'.l_team_intro_cell_item',
+            containerSelector: '.l_team_intro_cell_box',
+            itemSelector: '.l_team_intro_cell_item',
             btnNext: ".l_team_intro_list .l_page_left",
             btnPrev: ".l_team_intro_list .l_page_right",
             speed: 500,
@@ -390,17 +385,34 @@
         callback: null // 切换回调
     });
 
+    /*
+     * 头部轮播图
+     * */
+    if ($.responsiveSlides) {
+        $("#slider").responsiveSlides({
+            auto: !1,
+            pager: !0,
+            nav: !1,
+            speed: 500,
+            namespace: "slide"
+        });
+    }
 
     /*
-    * 头部轮播图
-    * */
+     * 13 搜索
+     *
+     * */
+    $.gui.tabs({
+        container: '.c_search_body', //tab 最外层的 selector
+        top: '.c_search_tab', //包裹 topElem 的 selector
+        topElem: 'a', //点击的元素 ,一定要有 href 属性, 对应切换容器的 id
+        activeClass: 'active',// tabElem 选中的 className
+        events: 'click', //切换事件, 默认点击
+        callback: null // 切换回调
+    });
 
-    $("#slider").responsiveSlides({
-        auto: !1,
-        pager: !0,
-        nav: !1,
-        speed: 500,
-        namespace: "slide"
+    $('.c_search_all').bind('click', function () {
+        $('#search_1 ,#search_2 ,#search_3').show();
     });
 
 
