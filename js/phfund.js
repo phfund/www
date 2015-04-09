@@ -264,10 +264,11 @@
         }
         _banner.css('right', _right + 'px');
         //console.log(_top < 500)
-        if (_top < 590) {
+        if (_top < 100) {
             _banner.stop().animate({'top': (590 - _top) + 'px'}, _time);
         } else {
-            _banner.stop().animate({'top': '10px'}, _time);
+            var _st = $(window).scrollTop() + 100 + 'px';
+            _banner.stop().animate({'top': _st}, _time);
         }
 
     });
@@ -281,6 +282,15 @@
         }
     });
 
+    /**复选框**/
+    $('.l_fund_check_grid span').click(function(){
+        var _this = $(this);
+        if(!_this.is('.l_check_label_check')){
+            _this.attr('class','l_check_label_check');
+        }else{
+            _this.attr('class','l_check_label');
+        }
+    });
     /*
      * 字号切换
      * */
@@ -404,5 +414,9 @@
     $('.c_search_all').bind('click', function () {
         $('#search_1 ,#search_2 ,#search_3').show();
     });
+
+
+
+
 
 })(window, window.document)
