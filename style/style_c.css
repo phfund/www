@@ -22,7 +22,7 @@
 .c_ico_right .c_ico{ position:absolute; top:50%; right:20px; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); }
 .c_top_grid{ position:relative; margin-bottom:20px; border-bottom:1px solid #e5e5e5; }
 .c_grid_more{ width:275px; height:50px; line-height:50px; left:0; margin-top:-50px; z-index:999; background-color:#f42536; color:#fff; padding-left:25px; font-size:16px; }
-.c_grid_more .c_arrow_right_outline{ *margin-top:-12px; }
+.c_grid_more .c_arrow_right_outline,.c_page_menu .c_arrow_down_outline{ *margin-top:-12px; }
 .c_grid_menu{ width:300px; height:360px; background-color:#212121; float:left; position:relative; }
 .c_grid_ul{ height:200px; position:relative; }
 .c_grid_ul .c_item{ height:50px; float:left; width:100%; position:relative; }

@@ -31,7 +31,7 @@ pngfix = function () {
                     es.backgroundImage = 'none';
                     if (j != 0) {
                         if (elc.position != "absolute")es.position = 'static';
-                        while (j-- > 0)if (!elkids[j].style.position)elkids[j].style.position = "relative";
+                        //while (j-- > 0)if (!elkids[j].style.position)elkids[j].style.position = "relative";
                     }
                 }
             }

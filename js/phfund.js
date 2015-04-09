@@ -283,12 +283,12 @@
     });
 
     /**复选框**/
-    $('.l_fund_check_grid span').click(function(){
+    $('.l_fund_check_grid span').click(function () {
         var _this = $(this);
-        if(!_this.is('.l_check_label_check')){
-            _this.attr('class','l_check_label_check');
-        }else{
-            _this.attr('class','l_check_label');
+        if (!_this.is('.l_check_label_check')) {
+            _this.attr('class', 'l_check_label_check');
+        } else {
+            _this.attr('class', 'l_check_label');
         }
     });
     /*
@@ -415,8 +415,11 @@
         $('#search_1 ,#search_2 ,#search_3').show();
     });
 
-
-
-
+    $('.h_sub_item').hover(function () {
+            $('.h_sub_item_menu', this).css('visibility','visible');
+        }, function () {
+            $('.h_sub_item_menu', this).css('visibility','hidden');
+        }
+    );
 
 })(window, window.document)
