@@ -214,18 +214,14 @@
     <img src="img/l_banner_3.jpg" alt="" />
 </div>
 </div>
-
-<!--4分级英雄内容-->
 <div class="l_main">
 <div class="container">
 <!--格子-->
 <div class="c_top_grid">
-
     <div class="c_grid_more c_ico_right">
         分级课堂
         <i class="c_ico c_arrow_right_outline"></i>
     </div>
-
     <div class="c_grid_menu l_grid_menu">
         <ul class="c_page_menu_ul">
             <li class="c_item c_ico_right">
@@ -266,8 +262,8 @@
         </div>
     </div>
 
-    <div class="c_grid_540 l_grid_540">
-        <div class="l_item">
+    <div class="l_grid_540">
+        <div class="l_item l_item_child1">
             <div class="l_inner">
                 <div class="l_hot">Hot</div>
                 <div class="l_title">鹏华债券C</div>
@@ -279,7 +275,7 @@
                 <div class="l_ico_right"></div>
             </div>
         </div>
-        <div class="l_item">
+        <div class="l_item l_item_child2">
             <div class="l_inner">
                 <div class="l_hot">News</div>
                 <div class="l_content">鹏华分级再现枭雄</div>
@@ -288,7 +284,7 @@
                 <div class="l_time">2014.01.26</div>
             </div>
         </div>
-        <div class="l_item">
+        <div class="l_item l_item_child3">
             <div class="l_inner">
                 <div class="l_hot">News</div>
                 <div class="l_content">鹏华分级再现枭雄</div>
@@ -297,7 +293,7 @@
                 <div class="l_time">2014.01.26</div>
             </div>
         </div>
-        <div class="l_item">
+        <div class="l_item l_item_child4">
             <div class="l_inner">
                 <div class="l_hot">Hot</div>
                 <div class="l_title">鹏华债券C</div>
@@ -309,13 +305,13 @@
                 <div class="l_ico_right"></div>
             </div>
         </div>
-        <div class="l_item">
+        <div class="l_item l_item_child5">
             <div class="l_inner">
                 <div class="l_hot">Hot</div>
                 <div class="l_title">全国巡讲</div>
             </div>
         </div>
-        <div class="l_item">
+        <div class="l_item l_item_child6">
             <div class="l_inner">
                 <div class="l_hot l_color_blue">Hot</div>
                 <div class="l_title">分级英雄APP</div>
@@ -334,35 +330,31 @@
         <p class="l_fund_choose_title">鹏华旗下分级基金</p>
         <ul>
             <li class="l_fund_check_grid">
+                <!--
                 <input type="checkbox" class="l_check_box" id="l_check_box01"/>
                 <label for="l_check_box01" class="l_check_label">全部分级</label>
+                -->
+                <span class="l_check_label_check"></span>全部分级
+            </li>
+            <li class="l_fund_check_grid">
+                <span class="l_check_label"></span>鹏华传媒分级
+            </li>
+            <li class="l_fund_check_grid">
+                <span class="l_check_label"></span>鹏华地产分级
+            </li>
+            <li class="l_fund_check_grid">
+                <span class="l_check_label"></span>鹏华国防分级
+            </li>
+            <li class="l_fund_check_grid">
+                <span class="l_check_label"></span>鹏华信息分级
+            </li>
+            <li class="l_fund_check_grid">
+                <span class="l_check_label"></span>鹏华证券保险分级
+            </li>
+            <li class="l_fund_check_grid">
+                <span class="l_check_label"></span>鹏华资源分级
+            </li>
 
-            </li>
-            <li class="l_fund_check_grid">
-                <input type="checkbox" class="l_check_box" id="l_check_box02"/>
-                <label for="l_check_box02" class="l_check_label">鹏华传媒分级</label>
-            </li>
-            <li class="l_fund_check_grid">
-                <input type="checkbox" class="l_check_box" id="l_check_box03"/>
-                <label for="l_check_box03" class="l_check_label">鹏华地产分级</label>
-
-            </li>
-            <li class="l_fund_check_grid">
-                <input type="checkbox" class="l_check_box" id="l_check_box04"/>
-                <label for="l_check_box04" class="l_check_label">鹏华国防分级</label>
-            </li>
-            <li class="l_fund_check_grid">
-                <input type="checkbox" class="l_check_box" id="l_check_box05"/>
-                <label for="l_check_box05" class="l_check_label">鹏华信息分级</label>
-            </li>
-            <li class="l_fund_check_grid">
-                <input type="checkbox" class="l_check_box" id="l_check_box06"/>
-                <label for="l_check_box06" class="l_check_label">鹏华证券保险分级</label>
-            </li>
-            <li class="l_fund_check_grid">
-                <input type="checkbox" class="l_check_box" id="l_check_box07"/>
-                <label for="l_check_box07" class="l_check_label">鹏华资源分级</label>
-            </li>
         </ul>
 
     </div>
@@ -370,7 +362,7 @@
 
 
 <!--分级基金行情数据-->
-<div class="l_fund_list">
+<div class="l_fund_list l_fund_bottom_none">
 <div class="l_title_outer">
     <div class="l_main_title">鹏华系列分级基金行情数据<small class="l_title_small">（净值日期：2014-02-01）</small> </div>
     <div class="l_sub_title2">Structured Fund</div>
@@ -379,94 +371,98 @@
 <!--基金表格-->
 <div class="c_fd_table l_fd_table">
 <ul class="c_fd_th">
-    <li class="c_item">
+    <li class="c_item c_item_1">
         基金名称
     </li>
-    <li class="c_item">
+    <li class="c_item c_item_2">
         基金代码
     </li>
-    <li class="c_item">
+    <li class="c_item c_item_3">
         最新净值
     </li>
-    <li class="c_item">
+    <li class="c_item c_item_4">
         净值涨跌幅%
     </li>
-    <li class="c_item">
+    <li class="c_item c_item_5">
         收盘价
     </li>
-    <li class="c_item">
+    <li class="c_item c_item_6">
         隐含收益率%
     </li>
-    <li class="c_item">
+    <li class="c_item c_item_7">
         杠杆倍数
     </li>
-    <li class="c_item">
+    <li class="c_item c_item_8">
         指数成分股
     </li>
-    <li class="c_item">
+    <li class="c_item c_item_9">
         净值走势
     </li>
 
-    <li class="c_item">
+    <li class="c_item c_item_10">
         操作
     </li>
 </ul>
 
-<div class="c_fd_body l_fd_body">
+<div class="l_fd_body">
 <ul class="c_ul">
-    <li class="c_item">鹏华环保产业股票</li>
-    <li class="c_item">1.2100</li>
-    <li class="c_item">3.2100</li>
-    <li class="c_item c_green">-0.09</li>
-    <li class="c_item">--</li>
-    <li class="c_item">--</li>
-    <li class="c_item">--</li>
-    <li class="c_item">
-        <a class="l_component"></a>
+    <li class="c_item c_item_1">鹏华环保产业股票</li>
+    <li class="c_item c_item_2"><span class="l_after_line"></span>1.2100</li>
+    <li class="c_item c_item_3"><span class="l_after_line"></span>3.2100</li>
+    <li class="c_item c_item_4 c_green"><span class="l_after_line"></span>-0.09</li>
+    <li class="c_item c_item_5"><span class="l_after_line"></span>--</li>
+    <li class="c_item c_item_6"><span class="l_after_line"></span>--</li>
+    <li class="c_item c_item_7"><span class="l_after_line"></span>--</li>
+    <li class="c_item c_item_8">
+        <span class="l_after_line"></span><img src="img/img_component.png"/>
     </li>
-    <li class="c_item">
-        <a class="l_trend"></a>
+    <li class="c_item c_item_9">
+        <span class="l_after_line"></span><img src="img/img_trend.png"/>
     </li>
-    <li class="c_item">
+    <li class="c_item c_item_10">
         <a class="c_button" href="">申购</a>
     </li>
 </ul>
 <ul class="c_ul">
-    <li class="c_item">鹏华环保产业股票</li>
-    <li class="c_item">1.2100</li>
-    <li class="c_item">3.2100</li>
-    <li class="c_item">0</li>
-    <li class="c_item c_red">0.873</li>
-    <li class="c_item c_red">6.588</li>
-    <li class="c_item">--</li>
-    <li class="c_item">
-        <a class="l_component"></a>
+    <li class="c_item c_item_1">鹏华环保产业股票</li>
+    <li class="c_item c_item_2"><span class="l_after_line"></span>1.2100</li>
+    <li class="c_item c_item_3"><span class="l_after_line"></span>3.2100</li>
+    <li class="c_item c_item_4 c_red"><span class="l_after_line"></span>0.1</li>
+    <li class="c_item c_item_5 c_red"><span class="l_after_line"></span>0.869</li>
+    <li class="c_item c_item_6"><span class="l_after_line"></span>--</li>
+    <li class="c_item c_item_7"><span class="l_after_line"></span>--</li>
+    <li class="c_item c_item_8">
+        <span class="l_after_line"></span><img src="img/img_component.png"/>
     </li>
-    <li class="c_item">
-        <a class="l_trend"></a>
+    <li class="c_item c_item_9">
+        <span class="l_after_line"></span><img src="img/img_trend.png"/>
     </li>
-    <li class="c_item">
+    <li class="c_item c_item_10">
         <a class="c_button" href="">申购</a>
     </li>
 </ul>
 <ul class="c_ul">
-    <li class="c_item">鹏华环保产业股票</li>
-    <li class="c_item">1.2100</li>
-    <li class="c_item">3.2100</li>
-    <li class="c_item c_green">-0.09</li>
-    <li class="c_item">--</li>
-    <li class="c_item">--</li>
-    <li class="c_item">--</li>
-    <li class="c_item">
-        <a class="l_component"></a>
+    <li class="c_item c_item_1">鹏华环保产业股票</li>
+    <li class="c_item c_item_2"><span class="l_after_line"></span>1.2100</li>
+    <li class="c_item c_item_3"><span class="l_after_line"></span>3.2100</li>
+    <li class="c_item c_item_4 c_red"><span class="l_after_line"></span>0.1</li>
+    <li class="c_item c_item_5 c_red"><span class="l_after_line"></span>0.869</li>
+    <li class="c_item c_item_6"><span class="l_after_line"></span>--</li>
+    <li class="c_item c_item_7"><span class="l_after_line"></span>--</li>
+    <li class="c_item c_item_8">
+        <span class="l_after_line"></span><img src="img/img_component.png"/>
     </li>
-    <li class="c_item">
-        <a class="l_trend"></a>
+    <li class="c_item c_item_9">
+        <span class="l_after_line"></span><img src="img/img_trend.png"/>
     </li>
-    <li class="c_item">
+    <li class="c_item c_item_10">
         <a class="c_button" href="">申购</a>
     </li>
 </ul>
+
+
+
+
 </div>
 
 </div>
@@ -747,5 +743,7 @@
 
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="js/phfund.js"></script>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="js/unitpngfix.js"></script><![endif]-->
 </body>
 </html>
