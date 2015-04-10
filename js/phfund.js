@@ -72,7 +72,7 @@
                     options = this.options,
                     callback = options.callback;
                 this.items.bind(options.events, function (evt) {
-                    var href = this.getAttribute('href');
+                    var href = $(this).attr('href');
                     contents.forEach(function (item) {
                         if (item == href) {
                             $(item, options.container).show();
@@ -91,6 +91,7 @@
                     }
                     evt.stopPropagation();
                     evt.preventDefault();
+                    return false;
                 });
             },
             unbind: function () {
