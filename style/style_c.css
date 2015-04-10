@@ -150,8 +150,8 @@
 .c_fund_list .c_fund_ul .c_item a{ display:block; margin:0 6px; color:#444; border-radius:18px; }
 .c_fund_list .c_fund_ul .c_item a:hover, .c_fund_list .c_fund_ul .c_item .active{ color:#fff; background-color:#ff0000; }
 .c_fd_table{ background-color:#fff; }
-.c_fd_th{ overflow:hidden; line-height:38px; text-align:center; border-bottom:1px solid #e5e5e5;display:table-row;width: 100%;_height: 61px;_border-bottom:0;}
-.c_fd_th .c_item{ color:#a6a6a6; display:table-cell;_display: inline;_float: left;}
+.c_fd_th{ overflow:hidden; line-height:38px; text-align:center; display:table-row;width: 100%;_height: 61px;}
+.c_fd_th .c_item{ color:#a6a6a6; display:table-cell;_display: inline;_float: left;border-bottom:1px solid #e5e5e5;}
 .c_fd_th .c_item:after{ display:none;}
 .c_fd_th .c_item:hover .c_arrow_bottom{ background-image:url(images/ico_arrow_bottom_red.png); }
 .c_fd_th .active .c_arrow_bottom{ transform:rotate(180deg); }
@@ -160,14 +160,15 @@
 .c_w100{ width:100px; }
 .c_w230{ width:230px; }
 .c_w156{ width:156px; }
+.c_w210{ width:210px; }
 .c_fd_table .c_fd_body{ font-size:13px; display:table;width: 100%;}
 .c_fd_table .c_fd_body .c_ul{ color:#808080; overflow:hidden; display:table-row;_height: 60px;}
 .c_fd_table .c_fd_body a:hover{ text-decoration:underline; }
 .c_fd_table .c_fd_body .c_item:nth-child(2){ font-size:16px; color:#ff0000; }
 .c_fd_table .c_fd_body .c_item:first-child{ text-indent:-1em; border-right:1px solid #e5e5e5; color:#555; }
 .c_fd_table .c_fd_body .c_item:first-child{}
-.c_fd_table .c_fd_body .c_item{ text-align:center; height:60px;  line-height:60px; _border-bottom:0; position:relative; display:table-cell;}
-.c_ul .c_item{_position: relative;_display: inline;_float: left;}
+.c_fd_table .c_fd_body .c_item{ text-align:center; height:60px;  line-height:60px; position:relative; display:table-cell;}
+.c_ul .c_item{_position: relative;_display: inline;_float: left;border-bottom:1px solid #e5e5e5;}
 .c_fd_table .c_fd_body .c_item .c_button{ _margin-top:10px;}
 .c_item01{_width: 176px;border-right:1px solid #e5e5e5; }
 .c_item02{_width: 100px;}

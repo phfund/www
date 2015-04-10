@@ -13,16 +13,18 @@
 <div class="header">
 
     <div class="header_nav">
+        <div class="header_nav_bg"></div>
         <div class="container">
 
             <div class="h_sub_nav">
                 <ul class="h_sub_ul">
-                    <li class="h_sub_item">
+                    <li class="h_sub_item h_has_child">
                         <a href="">
                             移动理财
                         </a>
 
                         <div class="h_sub_item_menu">
+                            <div class="h_sub_item_menu_bg"></div>
                             <div class="h_m_item">
                                 <img src="img/h_qr1.png" alt="" />
                                 <div class="h_txt">鹏华官方微博</div>
@@ -87,7 +89,7 @@
             </ul>
 
             <!--搜索-->
-            <div class="h_search"></div>
+            <a class="h_search" href=""></a>
 
             <div class="h_search_box">
                 <div class="h_search_inner">
@@ -131,6 +133,7 @@
     </div>
 
     <div class="h_login_box noselect">
+        <div class="h_login_box_bg"></div>
         <div class="h_login">
             <div class="h_switch_btn"></div>
 
@@ -212,8 +215,22 @@
     </div>
 
 
+    <!--轮播图 -->
     <div class="h_banner">
-        <img src="img/banner_1.png" alt="" />
+        <ul id="slider">
+            <li class="h_item">
+                <img src="img/banner_1.jpg" alt="" />
+            </li>
+            <li class="h_item">
+                <img src="img/banner_1.jpg" alt="" />
+
+            </li>
+            <li class="h_item">
+                <img src="img/banner_1.jpg" alt="" />
+
+            </li>
+        </ul>
+
     </div>
 </div>
 
@@ -283,7 +300,7 @@
 
                     <!--修改图片时注意尺寸-->
                     <div class="c_grid_360_ad">
-                        <img src="img/img_iphone.png" alt="" />
+                        <img src="img/img_iphone.gif" alt="" />
                     </div>
 
                     <div class="c_inner">
@@ -296,7 +313,7 @@
                         </div>
 
                         <div class="clearfix">
-                            <img class="c_qrcode" src="img/h_qr2.png" alt="">
+                            <img class="c_qrcode" src="img/h_qr2.jpg" alt="">
                         </div>
 
                         <div class="clear">
@@ -436,7 +453,7 @@
                             <div class="c_ico_right"></div>
 
                             <div class="c_adi">
-                                <img src="img/img_tab_pc.png" alt="" />
+                                <img src="img/img_tab_pc.jpg" alt="" />
                             </div>
                         </div>
                     </a>
@@ -729,8 +746,24 @@
                         <li class="c_item c_w230">
                             基金特点
                         </li>
-                        <li class="c_item c_w230"></li>
+                        <li class="c_item c_w156"></li>
                     </ul>
+                    <ul class="c_ul clearfix">
+                        <li class="c_item c_w200">
+                            <a>鹏华环保产业股票</a>
+                        </li>
+                        <li class="c_item c_w110">1.2100</li>
+                        <li class="c_item c_w100">3.2100</li>
+                        <li class="c_item c_w100 c_green">0.74</li>
+                        <li class="c_item c_w100">2.64</li>
+                        <li class="c_item c_w100">2.64</li>
+                        <li class="c_item c_w100">2.64</li>
+                        <li class="c_item c_w230">分享环保产业成长机会</li>
+                        <li class="c_item c_w156">
+                            <button type="button" class="c_button">申购</button>
+                        </li>
+                    </ul>
+
                     <ul class="c_ul clearfix">
                         <li class="c_item c_w200">
                             <a>鹏华环保产业股票</a>
@@ -1623,10 +1656,17 @@
         <p class="l_icon_label">回到顶部</p>
     </a>
 </div>
+
+
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/responsiveslides.min.js"></script>
 
 <script type="text/javascript" src="js/phfund.js"></script>
 
-<!--<script type="text/javascript" src="firebug-lite/build/firebug-lite.js"></script>-->
+
+<!--[if lt IE 7]>
+<script type="text/javascript" src="js/unitpngfix.js"></script>
+<![endif]-->
 </body>
 </html>
