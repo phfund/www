@@ -440,7 +440,7 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_links .c_title{ font-size:24px; padding-bottom:35px; border-bottom:1px dashed #e5e5e5; }
 .c_links .c_title2{ font-size:18px; padding-bottom:18px; }
 .c_links .c_ul{ overflow:hidden; }
-.c_links .c_item{ float:left; width:20%; padding:0 0 18px; }
+.c_links .c_item{ float:left; width:20%; padding:0 0 18px; border:none;}
 .c_links .c_item a{ color:#666; }
 .c_links .c_item a:before{ content:'• '; }
 .c_links .c_item a:hover{ color:#ff1f35; }
