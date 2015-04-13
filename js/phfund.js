@@ -58,7 +58,7 @@
                     items = $(options.topElem, top),
                     contents = [];
                 items.each(function (i, item) {
-                    contents.push(item.getAttribute('href'));
+                    contents.push($(item).attr('href'));
                 });
 
                 this.items = items;
@@ -73,7 +73,8 @@
                     callback = options.callback;
                 this.items.bind(options.events, function (evt) {
                     var href = $(this).attr('href');
-                    contents.forEach(function (item) {
+
+                    $.each(contents,function (i,item) {
                         if (item == href) {
                             $(item, options.container).show();
                         } else {
