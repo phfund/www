@@ -369,7 +369,7 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .ico_fd_sider_right{ background-image:url(images/ico_arrow_right_big.png); width:43px; height:43px; position:absolute; right:0; top:22px; }
 .c_sp_box{ }
 .c_sp_box .c_row{ width:100%; }
-.c_sp_box .c_col{ float:left \9; width:33.33% \9; }
+.c_sp_box .c_col{ float:left ; width:33.33%; }
 .c_sp_box img{ display:block; }
 .c_fd_news{ height:auto; }
 .c_fd_news .c_col{ width:100%; padding-bottom:22px;_width:49.5%;_float: left;_display: inline;width:49.5%\9;float: left\9;display: inline\9;}
