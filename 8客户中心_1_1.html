@@ -12,16 +12,18 @@
 <div class="header">
 
     <div class="header_nav">
+        <div class="header_nav_bg"></div>
         <div class="container">
 
             <div class="h_sub_nav">
                 <ul class="h_sub_ul">
-                    <li class="h_sub_item">
+                    <li class="h_sub_item h_has_child">
                         <a href="">
                             移动理财
                         </a>
 
                         <div class="h_sub_item_menu">
+                            <div class="h_sub_item_menu_bg"></div>
                             <div class="h_m_item">
                                 <img src="img/h_qr1.png" alt="" />
                                 <div class="h_txt">鹏华官方微博</div>
@@ -67,7 +69,7 @@
 
             <ul class="h_nav">
                 <li class="h_item">
-                    <a class="" href="">首页</a>
+                    <a class="active" href="">首页</a>
                 </li>
                 <li class="h_item">
                     <a href="">至尊宝
@@ -88,6 +90,35 @@
             <!--搜索-->
             <a class="h_search" href=""></a>
 
+            <div class="h_search_box">
+                <div class="h_search_inner">
+                    <input class="h_input" type="text" />
+
+                    <i class="h_ico h_ico_search"></i>
+
+                </div>
+
+                <!-- menu 分两种， 可以使用不同的 li 组装 -->
+                <ul class="h_drop_menu">
+                    <li class="h_item">
+                        <a class="c_red" href="">在基金产品分类中搜索</a>
+                    </li>
+                    <li class="h_item ">
+                        <a class="c_red" href="">在基金公告分类中搜索</a>
+                    </li>
+                    <li class="h_item">
+                        <a href="">地产<b>分级</b></a>
+                    </li>
+                    <li class="h_item">
+                        <a href="">信息<b>分级</b></a>
+                    </li>
+                    <li class="h_item">
+                        <a href="">传媒<b>分级</b></a>
+                    </li>
+                </ul>
+
+            </div>
+
             <a class="h_explor" href="">
                 <span class="h_title">Explore Your Possibilities</span>
                 <span class="h_subtitle">探索你的投资可能</span>
@@ -101,6 +132,7 @@
     </div>
 
     <div class="h_login_box noselect">
+        <div class="h_login_box_bg"></div>
         <div class="h_login">
             <div class="h_switch_btn"></div>
 
@@ -115,7 +147,7 @@
                 <a class="h_signin_btn" href="">免费开户</a>
 
                 <ul class="h_login_forget">
-                    <li class="h_item bdNone">
+                    <li class="h_item">
                         <a href="">交易指南</a>
                     </li>
                     <li class="h_item">
@@ -182,8 +214,22 @@
     </div>
 
 
+    <!--轮播图 -->
     <div class="h_banner">
-        <img src="img/banner_1.png" alt="" />
+        <ul id="slider">
+            <li class="h_item">
+                <img src="img/banner_1.jpg" alt="" />
+            </li>
+            <li class="h_item">
+                <img src="img/banner_1.jpg" alt="" />
+
+            </li>
+            <li class="h_item">
+                <img src="img/banner_1.jpg" alt="" />
+
+            </li>
+        </ul>
+
     </div>
 </div>
 

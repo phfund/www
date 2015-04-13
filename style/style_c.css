@@ -34,7 +34,7 @@
 .c_grid_bottom{ }
 .c_grid_bottom .c_ico{ vertical-align:middle; display:inline-block; margin:0 5px 0 22px; }
 .c_grid_bottom a{ color:#fff; font-size:16px; vertical-align:middle; display:inline-block; }
-.c_grid_bottom .c_item{ float:left; margin:-1px; border:1px solid rgba(0, 0, 0, 0.25); height:80px; line-height:74px; width:50%; }
+.c_grid_bottom .c_item{ float:left;  height:78px; line-height:74px; width:50%; }
 .c_grid_bottom .c_item:hover{ background-color:#ff1f35; }
 .c_grid_bottom .c_item:nth-child(1){ border-right:none; border-bottom:none; }
 .c_grid_bottom .c_item:nth-child(3){ border-right:none; }
@@ -168,7 +168,7 @@
 .c_fd_table .c_fd_body .c_item:first-child{ text-indent:-1em; border-right:1px solid #e5e5e5; color:#555; }
 .c_fd_table .c_fd_body .c_item:first-child{}
 .c_fd_table .c_fd_body .c_item{ text-align:center; height:60px;  line-height:60px; position:relative; display:table-cell;}
-.c_ul .c_item{_position: relative;_display: inline;_float: left;border-bottom:1px solid #e5e5e5;}
+.c_fd_table .c_fd_body .c_ul .c_item{_position: relative;_display: inline;_float: left;border-bottom:1px solid #e5e5e5;}
 .c_fd_table .c_fd_body .c_item .c_button{ _margin-top:10px;}
 .c_item01{_width: 176px;border-right:1px solid #e5e5e5; }
 .c_item02{_width: 100px;}
@@ -383,13 +383,13 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_fd_search_bar .c_item{ float:left; padding:0 7px; }
 .c_fd_search_bar a{ font-size:14px; color:#999; }
 .c_fd_search_bar a:hover{ color:#ff1f35; }
-.c_fd_filter{ border:1px solid #e5e5e5; margin-bottom:20px; background-color:#fff;_height: 188px; }
-.c_fd_filter .c_col{ padding:9px; font-size:14px; line-height:30px;_position: relative;position: relative\9; }
+.c_fd_filter{ border:1px solid #e5e5e5; margin-bottom:20px; background-color:#fff;height: 188px;}
+.c_fd_filter .c_col{ padding:9px; font-size:14px; float:left; line-height:30px;_position: relative;position: relative\9; }
 .c_fd_filter .c_fd_t_item{ overflow:hidden; padding:19px 0 0 30px;_display: block;_height: 30px; }
 .c_fd_filter .c_fd_t_item .c_dt{ float:left; padding:0 25px 0 0; }
 .c_fd_filter .c_fd_t_item .c_dd{ float:left; }
 .c_fd_filter .c_fd_t_item .c_dd .c_item{ float:left; padding:0 10px; margin-right:14px; cursor:pointer; }
-.c_fd_filter .c_col:first-child{ width:948px; }
+.c_fd_filter .c_col:first-child{ width:940px; }
 .c_fd_filter .c_col .active{ border-radius:3px; color:#fff; background-color:#ff1f35; cursor:default; }
 .c_fd_filter .c_col img{ display:block; _position: absolute;_top: -156px;_right: 10px;position: absolute\9;top: -156px\9;right: 10px\9;}
 .c_fd_list{ border:1px solid #e5e5e5; background-color:#fff; margin-bottom:22px; }
