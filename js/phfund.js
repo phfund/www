@@ -424,4 +424,12 @@
         }
     );
 
+    /**专业理财 开户流程,网上直销交易流程**/
+    $('.l_flow_box .action_flow').bind('click',function(){
+
+        var _index = $(this).index(),
+            _cells = $(this).parents('.l_flow_box').children('.l_flow_box_dialog').children('.l_flow_dialog_cell');
+        _cells.hide();
+        _cells.eq(_index).show();
+    });
 })(window, window.document)
