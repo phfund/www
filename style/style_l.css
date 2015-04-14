@@ -27,6 +27,7 @@
 .l_top_grid2{ margin-bottom: 0;}
 .l_top_grid2 .c_arrow_down_outline{ *margin-top:-10px;}
 
+
 .l_top_grid1 .l_arrow_down_outline{ background-image:url(images/ico_arrow_down_outline.png); width:24px; height: 24px;  }
 .l_top_grid1 .c_grid_more{ background-color:rgba(255,31,53,.9);}
 .l_top_grid1 .l_item_code{ margin:0 0 10px 25px; border:3px solid #fff; width:98px; height: 97px;}
@@ -65,7 +66,7 @@
 .l_grid_540 .l_img{ text-align: center; padding-top:18px;}
 .l_grid_inner{ padding:40px 30px; }
 .l_grid_inner1{ padding:23px 30px;}
-.l_grid_nav{ color:#808080; font-size:13px; margin-bottom:40px;}
+.l_grid_nav{ color:#808080; font-size:13px; margin-bottom:40px; *margin-bottom:20px;}
 .l_grid_nav .l_grid_nav_li{ padding-right:12px;}
 .l_grid_nav .l_grid_nav_li:last-child{ color: #212121;}
 
@@ -282,7 +283,7 @@
 .l_grid_left_head{ background-color: #fff;}
 .l_grid_left_body{border-top:1px solid #e5e5e5; }
 .l_grid_left_body .l_grid_left_box:nth-child(2n-1){ width:448px; border-left:1px solid #e5e5e5; }
-.l_grid_left_box{ float: left; width:449px; min-height: 200px; height: auto; padding-top:22px; background-color: #fff; border-right:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;}
+.l_grid_left_box{ float: left; width:449px; min-height: 200px; height: auto; *height:200px;  padding-top:22px; background-color: #fff; border-right:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;}
 .l_grid_left_img{ float: left; width:120px; text-align: center;}
 .l_grid_left_content{ margin-left:120px; width:260px; color: #212121;}
 .l_grid_left_content .l_size_14{ color: #808080; padding-top: 10px; line-height: 24px;}
@@ -308,7 +309,7 @@
 .l_flow_box_dialog{ position: relative; padding:20px; border:2px solid #ffe4e6; border-radius: 5px; font-size:14px; line-height: 30px; color: #808080; }
 .l_flow_box_dialog .l_button_red{ display: block; margin:15px 15px 15px 0; width: 120px; height: 36px; color: #fff;  }
 .l_flow_box_dialog .l_button_red:hover{ color: #fff;}
-.l_flow_triangle{ position: absolute; top:-18px; left:100px; display: block; width:20px; height: 18px; background:url(images/l_box_trangle.jpg) no-repeat;}
+.l_flow_triangle{ position: absolute; top:-17px; *top:-15px; left:100px; display: block; width:20px; height: 18px; background:url(images/l_box_trangle.jpg) no-repeat;}
 .l_flow_step01{ left:33px;}
 .l_flow_step02{ left:175px;}
 .l_flow_step03{ left:321px;}
@@ -333,7 +334,7 @@
 .l_login .l_login_line{ padding-bottom:8px;}
 .l_login .l_login_num{ height:97px; line-height: 59px; color: #ff0000; font-size:44px;  font-family: arial; padding:10px 0 0;}
 .l_login .l_login_num_big{ font-size:88px; font-weight:normal;vertical-align:text-top; vertical-align:-webkit-baseline-middle;}
-.l_login .l_login_check{ display:inline-block; margin-left:0px; width:12px; height: 15px; *height:12px; background:url(images/l_zzb_check.png) no-repeat right 3px;}
+.l_login .l_login_check{ display:inline-block;  margin-left:5px; *margin-left:5px; width:12px; height: 15px; *height:12px; background:url(images/l_zzb_check.png) no-repeat right 3px;}
 .l_login .h_login_btn{ margin-top:10px;}
 
 
@@ -503,9 +504,9 @@
 .l_joural_cell{ border:1px solid #e6e6e6; padding:9px; display:inline-block; margin:11px;}
 .l_grid_search_box{ border:1px solid #e5e5e5; width:455px; height:20px; padding:10px 10px 10px 20px; line-height: 20px; position: relative;}
 .l_grid_search_box .l_grid_search_bt{ float: right;}
-.l_grid_search_box .l_grid_search_input{ border:none; font-size:14px; color: #808080; width:415px; }
+.l_grid_search_box .l_grid_search_input{ border:none; *border:1px solid #fff; font-size:14px; color: #808080; width:415px; }
 
-.l_grid_search_bt{display:block; background:url(images/ico_fd_search.png) no-repeat center center; width:38px; position: absolute; right:0; top:0; bottom:0px; }
+.l_grid_search_bt{display:block; background:url(images/ico_fd_search.png) no-repeat center center; width:38px; *width:40px; position: absolute; right:0; top:0; bottom:0px; *height:45px; }
 .l_grid_search_active .l_grid_search_input{ color: #000;}
 .l_grid_search_active .l_grid_search_bt{ background-color:#ff0000; background-image:url(images/ico_search_white_s.png);}
 
@@ -536,17 +537,17 @@
 .l_grid_vision .l_vision_img,.l_grid_vision .l_vision_img img{ width:200px; height:200px;}
 .l_grid_vision .l_vision_img{ border-radius: 10px; overflow: hidden; position: relative; float: left;}
 .l_grid_vision .l_vision_img_mask{ background-color: #000; opacity: 0.7; filter:alpha(opacity=70);}
-.l_grid_vision .l_vision_img_mask,.l_grid_vision .l_vision_img_name{position: absolute; bottom:0; left:0; right:0; height: 30px;}
+.l_grid_vision .l_vision_img_mask,.l_grid_vision .l_vision_img_name{position: absolute; bottom:0; left:0; right:0; height: 30px; width:100%;}
 .l_grid_vision .l_vision_img_name{ color: #fff; text-align: center; line-height: 30px; font-size:13px;}
 .l_grid_vision .l_vision_rg{ margin-left:235px;}
-.l_grid_vision .l_vision_rg_header{ padding-bottom:20px;font-size:14px; overflow: hidden;}
+.l_grid_vision .l_vision_rg_header{ padding-bottom:20px; *padding-bottom:0; font-size:14px; overflow: hidden;}
 .l_grid_vision .l_vision_label{ display:block; float: left; width:80px; color: #000;}
 .l_grid_vision .l_vision_ul{ margin-left:68px;}
-.l_grid_vision .l_vision_li{ float: left; margin-bottom:15px; color:#ff0000; border-right:1px solid #ededed; padding:0 18px; height:13px; line-height: 13px;}
+.l_grid_vision .l_vision_li{ float: left; margin-bottom:15px; *margin-bottom:0; color:#ff0000; border-right:1px solid #ededed; padding:0 18px; height:13px; line-height: 18px;}
 .l_grid_vision .l_border_none{ border-right: 0;}
-.l_grid_vision .l_intro_lf_title{ width:465px;}
+.l_grid_vision .l_intro_lf_title{ width:465px; *width:400px;}
 .l_grid_vision .l_vision_rg_body{ padding-right:20px;}
-.l_grid_vision .l_vision_rg_line{ height: 30px; line-height: 30px;}
+.l_grid_vision .l_vision_rg_line{ height: 30px; line-height: 30px; width:550px; *width:500px;  overflow:hidden;}
 .l_grid_vision .l_vision_rg_line .l_size_18{ color: #000;}
 
 .l_grid_latest .l_grid_cell{ margin:0 60px; width:auto;}
@@ -615,3 +616,4 @@
 .l_apps .l_inner{ color: #212121; padding:30px 65px 0; line-height: 20px; font-size:13px;}
 .l_apps .l_app_code,.l_apps .l_size_20{ margin-bottom:15px; text-align: center;}
 .l_weichart_list{ margin-top:30px;}
+.l_grid_latest,.l_grid_vision{ *width:850px;}

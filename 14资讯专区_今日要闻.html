@@ -147,8 +147,8 @@
                     <div class="l_cell_policy">
                         <div class="l_grid_body_nav">
                             <div class="l_grid_date_box">
-                                <input type="text" class="l_grid_date_input" value="2015-08-21"/>
-                                <img src="img/img_date.jpg" class="l_grid_date_img"/>
+                                <input type="text" class="l_grid_date_input" id="pickTime" value="2015-08-21"/>
+                                <img src="img/img_date.jpg" class="l_grid_date_img" class="picTime"/>
                             </div>
                         </div>
                         <div class="c_title">今日要闻</div>
@@ -480,8 +480,21 @@
     </div>
 
 </div>
-
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/date_picker/WdatePicker.js"></script>
 <script type="text/javascript" src="js/phfund.js"></script>
+<script>
+    $('#pickTime').click(function(){
+        WdatePicker({
+            isShowClear:false,
+            isShowToday:false,
+            skin:'default',
+            dateFmt:'yyyy-MM-dd',
+            startDate:'%y-%M-%d',
+            isShowOK:false
+        });
+    });
+
+</script>
 </body>
 </html>
