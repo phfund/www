@@ -31,14 +31,14 @@
 .c_grid_ul a:hover, .c_grid_ul .active{ background-color:#ff1f35; }
 .c_grid_menu .c_ico{ display:none; }
 .c_grid_ul a:hover .c_ico, .c_grid_ul .active .c_ico{ display:block; }
-.c_grid_bottom{ }
+.c_grid_bottom{ *zoom:1; overflow:hidden; border-top:1px solid #000;}
 .c_grid_bottom .c_ico{ vertical-align:middle; display:inline-block; margin:0 5px 0 22px; }
 .c_grid_bottom a{ color:#fff; font-size:16px; vertical-align:middle; display:inline-block; }
-.c_grid_bottom .c_item{ float:left;  height:78px; line-height:74px; width:50%; }
-.c_grid_bottom .c_item:hover{ background-color:#ff1f35; }
-.c_grid_bottom .c_item:nth-child(1){ border-right:none; border-bottom:none; }
-.c_grid_bottom .c_item:nth-child(3){ border-right:none; }
-.c_grid_bottom .c_item:nth-child(2){ border-bottom:none; }
+.c_grid_bottom .c_item{ float:left;  height:78px; line-height:74px; width:50%; border:1px solid #000; margin:-1px; position:relative; z-index:1;}
+.c_grid_bottom .c_item:hover{ background-color:#ff1f35; z-index:2;}
+.c_grid_bottom .c_item1{ border-right:none; border-bottom:none; }
+.c_grid_bottom .c_item3{ border-right:none; }
+.c_grid_bottom .c_item2{ border-bottom:none; }
 .c_grid_900{ float:left; width:900px; display:none; position:relative; overflow:hidden; zoom:1; }
 .c_grid_360{ float:left; width:360px; height:360px; background-color:#fff; position:relative; }
 .c_grid_360 .c_inner{ padding:22px 0 0 30px; position:relative; z-index:999; }
@@ -221,7 +221,7 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_ico_fund2{ background-image:url(images/ico_fund_2.png);  width:122px; height:102px; display:inline-block; vertical-align:middle; }
 .c_fund_banner{ height:680px; }
 .c_fund_banner img{ height:680px; }
-.c_fund_single{ margin-top:-486px; position:relative; z-index:999; min-height:500px; *zoom:1;}
+.c_fund_single{ margin-top:-431px; position:relative; z-index:2; min-height:500px; *zoom:1;}
 .c_fund_single .c_fund_list{ margin-bottom:0; }
 .c_fund_single .c_fund_body{ background-color:#fff; min-height:700px; border-top:none; padding:0 50px 60px; }
 .c_fund_single .c_fund_body .c_expender{ line-height:30px; font-size:14px; color:#808080; margin-top:20px;}
@@ -229,13 +229,12 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_fund_notice .c_ico_notice{ background-image:url(images/ico_notice_hover.png); width:18px; height:18px; display:inline-block; vertical-align:middle; margin-right:15px; }
 .c_fund_notice .c_ico_close{ background-image:url(images/ico_close.png); width:12px; height:12px; float:right; cursor:pointer; position:relative; display:inline; margin:24px; background-repeat:no-repeat; }
 .c_fund_notice .vam{ vertical-align:middle; }
-.c_single_top{  color:#fff; margin-bottom:81px; height:116px; }
+.c_single_top{  color:#fff; margin-bottom:25px; height:116px; }
 .c_single_top .c_title{ font-size:56px; text-shadow:0 2px 5px rgba(0, 0, 0, .2); padding:0 0 5px 12px;}
 .c_single_top .c_title2{font-size:28px; padding-left:12px; }
 .c_single_top .c_button{ width:250px; margin-top:22px; height:60px; line-height:60px; border-radius:30px; font-size:24px; }
 .c_fund_info{ overflow:hidden; background-color:#fff; /* border-bottom:1px solid #e5e5e5;*/ }
 .c_fund_info .c_row{ display:block; flex-flow:row; padding:28px 0 15px 0px; height:102px;}
-.c_fund_info .c_row3{ background-color:#fafafa; }
 .c_fund_info .c_col{ width:160px; position:relative; padding:0 10px 0 29px; white-space:nowrap; float:left; }
 .c_fund_info .c_col:after{ content:''; position:absolute; right:0; top:15px; bottom:15px; border-left:1px solid #e5e5e5; }
 .c_fund_info .c_row .c_col:last-child:after{ border:none; }
@@ -245,9 +244,9 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_fund_info .c_info_tip{ background-image:url(images/fund_info_tip_bg.png); width:240px; height:100px; color:#fff; font-size:20px; margin-top:-18px; white-space:normal; padding:20px 20px 0 20px; line-height:38px; }
 .c_fund_info .c_row .c_col:first-child .c_red{ font-size:46px; margin-top:-7px; }
 .c_fund_info .c_txt{ font-size:30px; }
-.c_fund_info .c_row:nth-child(2) .c_col:first-child,
-.c_fund_info .c_row:nth-child(3) .c_col:first-child{ width:205px; }
-.c_fund_info .c_row:nth-child(3) .c_col:last-child{ width:185px; }
+.c_fund_info .c_last{ background-color:#fafafa;}
+
+
 .c_fund_info_etf .c_col{ width:auto; }
 .c_fund_info_etf .c_row:nth-child(3) .c_col:nth-child(2){ width:151px; }
 .c_fund_info_etf .c_row:nth-child(3) .c_col:nth-child(3){ width:143px; }
@@ -384,14 +383,14 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_fd_search_bar a{ font-size:14px; color:#999; }
 .c_fd_search_bar a:hover{ color:#ff1f35; }
 .c_fd_filter{ border:1px solid #e5e5e5; margin-bottom:20px; background-color:#fff;height: 188px;}
-.c_fd_filter .c_col{ padding:9px; font-size:14px; float:left; line-height:30px;_position: relative;position: relative\9; }
+.c_fd_filter .c_col{ padding:9px; font-size:14px; float:left; line-height:30px;_position: relative; }
 .c_fd_filter .c_fd_t_item{ overflow:hidden; padding:19px 0 0 30px;_display: block;_height: 30px; }
 .c_fd_filter .c_fd_t_item .c_dt{ float:left; padding:0 25px 0 0; }
 .c_fd_filter .c_fd_t_item .c_dd{ float:left; }
 .c_fd_filter .c_fd_t_item .c_dd .c_item{ float:left; padding:0 10px; margin-right:14px; cursor:pointer; }
 .c_fd_filter .c_col:first-child{ width:940px; }
 .c_fd_filter .c_col .active{ border-radius:3px; color:#fff; background-color:#ff1f35; cursor:default; }
-.c_fd_filter .c_col img{ display:block; _position: absolute;_top: -156px;_right: 10px;position: absolute\9;top: -156px\9;right: 10px\9;}
+.c_fd_filter .c_col img{ display:block; }
 .c_fd_list{ border:1px solid #e5e5e5; background-color:#fff; margin-bottom:22px; }
 .c_fd_list .c_list_item{ height:156px; padding:30px 0 30px 90px; position:relative;_position:relative; border-bottom:1px solid #e5e5e5; }
 .c_fd_list .c_list_item:last-child{ border:none; }
@@ -611,7 +610,7 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_page_ad{ padding:9px; }
 .c_page_ad img{ display:block; width:100%; }
 .c_cl_activity{ margin:0 -31px 20px -45px; text-indent:0; overflow:hidden; }
-.c_cl_activity .c_item{ float:left; width:33.33%; padding-bottom:25px; }
+.c_cl_activity .c_item{ float:left; width:33%; padding-bottom:25px; }
 .c_cl_activity .c_item img{ width:100%; display:block; padding-bottom:15px; }
 .c_cl_activity .c_title3{ font-size:16px; padding:0 0 5px 10px; }
 .c_cl_activity .c_content{ font-size:14px; color:#666; padding:0 0 0 10px; }
