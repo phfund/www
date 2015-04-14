@@ -395,18 +395,16 @@ transition:all .2s cubic-bezier(0.25, .5, .5, .9); }
 .c_fd_list .c_list_item{ height:156px; padding:30px 0 30px 90px; position:relative;_position:relative; border-bottom:1px solid #e5e5e5; }
 .c_fd_list .c_list_item:last-child{ border:none; }
 .c_fd_list .c_list_item:hover{ box-shadow:0 2px 3px rgba(0, 0, 0, .2); }
-.c_fd_list .c_list_item .c_item{ float:left; height:100px;*padding-left: 60px;padding-left: 60px !important;}
+.c_fd_list .c_list_item .c_item{ float:left; *padding-left: 60px;padding-left: 60px !important;}
 .c_fd_list .c_title{ font-size:24px; padding-bottom:5px; }
 .c_fd_list .c_title2{ font-size:16px !important; line-height:26px; }
 .c_fd_list .c_badge{ color:#fff; font-size:28px; width:80px; height:80px; position:absolute; top:-30px; left:-90px;_position:absolute;*z-index: 9;*top:0px; *left:0px;position:absolute !important;top: 0 !important;left: 0 !important;z-index: 99 !important; }
 .c_badge01{_background-image:url(images/ico_sp_1.png);background-image:url(images/ico_sp_1.png) !important;}
 .c_badge02{_background-image:url(images/ico_sp_2.png);background-image:url(images/ico_sp_2.png) !important;}
 .c_badge03{_background-image:url(images/ico_sp_3.png);background-image:url(images/ico_sp_3.png) !important;}
-.c_fd_list .c_list_item:nth-child(1) .c_badge,
-.c_fd_list .c_list_item:nth-child(5) .c_badge,
-.c_fd_list .c_list_item:nth-child(2) .c_badge{ background-image:url(images/ico_sp_1.png); }
-.c_fd_list .c_list_item:nth-child(3) .c_badge{ background-image:url(images/ico_sp_2.png); }
-.c_fd_list .c_list_item:nth-child(4) .c_badge{ background-image:url(images/ico_sp_3.png); }
+
+
+
 .c_fd_list .c_grey{ font-size:16px; }
 .c_fd_list .c_date{ font-size:12px; color:#808080; }
 .c_fd_list .c_red{ font-size:36px; }
