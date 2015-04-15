@@ -11,7 +11,7 @@
 .c_ico_t2{ background-image:url(images/ico_tool_2.png); width:20px; height:24px; }
 .c_ico_t3{ background-image:url(images/ico_tool_3.png); width:24px; height:25px; }
 .c_ico_t4{ background-image:url(images/ico_tool_4.png); width:24px; height:24px; }
-.container{ width:1200px; margin:0 auto; position:relative;_position:relative; *zoom:1;}
+.container{ z-index:1; width:1200px; margin:0 auto; position:relative;_position:relative; *zoom:1;}
 .c_red{ color:#ff1f35 !important; font-size:12px; }
 .c_grey{ color:#808080 !important; }
 .c_green{ color:#299f55; }
