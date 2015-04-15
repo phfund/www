@@ -413,7 +413,7 @@
 .l_grid_strutured .l_grid_txt_title{ padding-bottom:20px;}
 .l_grid_strutured .l_grid_txt_contxt{ font-size:14px; text-indent:2em;}
 
-.l_grid_videoes .l_grid_img,.l_grid_videoes .l_grid_img img{ width:220px; height: 220px;}
+.l_grid_videoes .l_grid_img,.l_grid_videoes .l_grid_img img{ width:220px;}
 .l_grid_videoes .l_grid_img{ border-radius: 10px; overflow: hidden; }
 .l_grid_videoes .l_grid_cell{ width:780px;}
 .l_grid_videoes .l_grid_right{ width:510px;}
