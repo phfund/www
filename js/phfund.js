@@ -388,7 +388,7 @@
     /*
      * 头部轮播图
      * */
-    if ($.responsiveSlides) {
+    if ($.fn.responsiveSlides) {
         $("#slider").responsiveSlides({
             auto: !1,
             pager: !0,

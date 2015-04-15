@@ -562,7 +562,7 @@
 .l_grid_latest .l_grid_rg .l_grid_txt_contxt{padding-bottom:50px;}
 .l_grid_latest .l_grid_cell_active{ margin-left:0; margin-right:0; padding-left:60px; padding-right:60px;}
 .l_banner_box{ position: relative; width:1200px; margin: 0 auto; height:500px;}
-.l_banner_inner{ position: absolute; left:594px; *left:670px; top:393px; width:350px; height:39px;  }
+.l_banner_inner{ position: absolute; left:324px;  top:393px; width:350px; height:39px;  }
 .l_banner_inner a{ width:99px; height: 37px; display:block; float: left; margin-right:10px; }
 .l_zzb_cell{ float: left; width:399px; height: 237px; border-right:1px solid #e5e5e5; overflow: hidden;}
 .l_zzb_cell .l_zzb_img{ width:128px; padding-top:40px; text-align: center; float: left;}
