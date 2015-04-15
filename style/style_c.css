@@ -87,20 +87,22 @@
 .c_grid_theme .c_title{ padding-bottom:4px; }
 .c_grid_theme .c_title2{ padding-bottom:5px; }
 .c_grid_theme .c_inner{ padding-top:22px; }
-.c_grid_theme .c_item2, .c_grid_theme .c_item2:hover{ width:148px; color:#fff; background-color:#e64a19 !important; }
+.c_grid_theme .c_item1, .c_grid_theme .c_item1:hover{ width:148px; color:#fff; background-color:#e64a19 !important; }
 .c_grid_theme .c_item3, .c_grid_theme .c_item3:hover{ width:148px; color:#fff; background-color:#7b1fa2 !important; }
-.c_grid_theme .c_item:nth-child(2){ background-color:#ffefeb; }
-.c_grid_theme .c_item:nth-child(4), .c_grid_theme .c_item:nth-child(4):hover{ background-color:#e5d5e8; color:#000; }
-.c_grid_theme .c_item:nth-child(4) .c_per{ color:#e64a19; }
+.c_grid_theme .c_item2{ background-color:#ffefeb; }
+.c_grid_theme .c_item4, .c_grid_theme .c_item4:hover{ background-color:#e5d5e8; color:#000; }
+.c_grid_theme .c_item4 .c_per{ color:#e64a19; }
 .c_grid_theme .c_grid_540 .c_button_outline{ position:absolute; bottom:26px; left:240px; }
 .c_grid_million{ }
 .c_grid_million .c_inner{ padding-right:22px; position:static; }
 .c_grid_million .c_ico_right,
 .c_grid_million .c_ico_right2{ position:absolute; left:30px; bottom:22px; }
-.c_grid_million .c_grid_360 .c_item:nth-child(1), .c_grid_million .c_grid_360 .c_item:nth-child(1):hover{ background-color:#f7f7f7; color:#555; }
-.c_grid_million .c_grid_360 .c_item:nth-child(2), .c_grid_million .c_grid_360 .c_item:nth-child(2):hover{ background-color:#349ce3; color:#fff; }
-.c_grid_million .c_grid_360 .c_item:nth-child(3), .c_grid_million .c_grid_360 .c_item:nth-child(3):hover{ background-color:#00bcd4; color:#555; }
-.c_grid_million .c_grid_360 .c_item:nth-child(4), .c_grid_million .c_grid_360 .c_item:nth-child(4):hover{ background-color:#f7f7f7; color:#555; }
+
+.c_grid_million .c_grid_360 .c_item1, .c_grid_million .c_grid_360 .c_item1:hover{ background-color:#f7f7f7; color:#555; }
+.c_grid_million .c_grid_360 .c_item2, .c_grid_million .c_grid_360 .c_item2:hover{ background-color:#349ce3; color:#fff; }
+.c_grid_million .c_grid_360 .c_item3, .c_grid_million .c_grid_360 .c_item3:hover{ background-color:#00bcd4; color:#555; }
+.c_grid_million .c_grid_360 .c_item4, .c_grid_million .c_grid_360 .c_item4:hover{ background-color:#f7f7f7; color:#555; }
+
 .c_grid_million .c_ico{ position:absolute; right:0; bottom:0; width:80px; height:80px; }
 .c_ico_heart{ background-image:url(images/ico_tab_heart.png); }
 .c_ico_persion{ background-image:url(images/ico_tab_person.png); }
