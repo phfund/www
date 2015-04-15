@@ -396,7 +396,7 @@
 .l_grid_video{ padding:16px 24px 0px;}
 .l_grid_video_box,.l_grid_video_box img{ width:280px; height: 220px;}
 .l_grid_video .l_common_title{ margin-left:-22px;}
-.l_grid_video_box{ position:relative; margin:30px auto 0; border-radius: 8px; overflow: hidden;}
+.l_grid_video_box{ position:relative; margin:18px auto 0; border-radius: 8px; overflow: hidden;}
 .l_grid_video_mask{ position: absolute; left:0; right:0; bottom:0; width:100%; background-color: rgba(0,0,0,.6); height: 47px; line-height: 47px; font-size:14px; color: #fff; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
 .l_fund_choose_inner{ padding:40px 10px 55px;}
