@@ -455,7 +455,8 @@
 .l_video_footer .l_video_page_rg{ right:0; background-image: url(images/l_page_rg.jpg);}
 
 .yellow-bg{  background-color:#fff100; }
-.yellow-bg .header_sample,.l_header_sample{ background-color: #fff; border-bottom:0;}
+.yellow-bg .header_sample,.l_header_sample{ background-image:none; background-color: #fff; border-bottom:0;}
+
 .l_container_hero{padding-bottom:20px;}
 .l_container_hero2{ padding-top:8px;}
 .l_container_hero2 .l_hero_center{ width:920px; }
