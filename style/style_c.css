@@ -65,11 +65,12 @@
 .c_grid_540 .c_item-nth-child5{ background-color:#e4e7ed; }
 .c_grid_540 .c_item-nth-child6{ background-color:#fff; }
 .c_grid_540 .c_item{ float:left; width:180px; height:180px; position:relative; _overflow:hidden; _zoom:1; }
-.c_grid_540 .c_inner{ padding:14px 20px 0 20px; }
+.c_grid_540 .c_item_mutl .c_ico_right{ background-image:url(images/ico_arrow_right4_outline.png); width:16px; height:16px; display:inline-block; margin-left:3px;}
+.c_grid_540 .c_inner{ padding:14px 6px 0 20px; }
 .c_grid_540 .c_hot{ padding-bottom:1px; font-size:12px !important; }
 .c_grid_540 .c_title{ font-size:18px; padding-bottom:2px; }
 .c_grid_540 .c_subtitle{ padding-bottom:2px; }
-.c_grid_540 .c_per{ color:#ff0000; font-size:32px; }
+.c_grid_540 .c_per{ color:#ff0000; font-size:32px; display:inline-block; }
 .c_grid_540 .c_grid_news:nth-child(3){ color:#fff; font-size:16px; }
 .c_grid_540 .c_grid_news .c_title{ height:80px; overflow:hidden; font-size:16px; }
 .c_grid_540 .c_date{ color:#ababab; font-size:12px; }
