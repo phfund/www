@@ -41,7 +41,7 @@ input::-ms-clear{ display:none; }
 .header_sample{ position:relative;border:1px solid #dbdbdb;background-color: #e5e5e5; background-image:url(images/bg_header_simple.gif); background-repeat:no-repeat; background-position:center center;}
 .header_sample .h_nav .h_item a{ color:#333;}
 .header_sample .h_explor .h_subtitle{ color:#333;}
-.header_sample .h_search_box{ top: 18px;}
+.header_sample .h_search_box{ top: 59px;}
 .header_sample .h_explor .h_ico_arrow_right_outline{ background-image:url(images/ico_arrow_right_outline_dark.png);}
 .header_sample .h_search{ opacity:1; background-image:url(images/ico_fd_search.png); background-repeat:no-repeat;}
 .header_sample .h_sub_nav a{ color:#333;}
