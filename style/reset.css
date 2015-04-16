@@ -168,12 +168,12 @@ transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
 
 .footer{ background-color:#fff; border-top:1px solid #e5e5e5; margin-top:40px; }
 
-.f_links{ padding:55px 0 0 25px; background:url(images/footer_bg.png) no-repeat right bottom; overflow:hidden; height:238px; }
-.f_link_ul{ float:left; width:200px; }
+.f_links{ padding:55px 0 0 25px; background:url(images/footer_bg.png) no-repeat right bottom; overflow:hidden; height:238px; position:relative; }
+.f_link_ul{ float:left; width:200px;  position:relative;}
 .f_link_ul .f_item_title{ font-size:16px; padding-bottom:14px; }
 .f_link_ul .f_item_title2{ font-size:12px; color:#ff1f35; margin-top:-12px; }
-.f_link_ul .f_item{ font-size:14px; padding-bottom:14px; }
-.f_link_ul a{ color:#808080; }
+.f_link_ul .f_item{ font-size:14px; padding-bottom:14px; position:relative; }
+.f_link_ul a{ color:#808080; position:relative; }
 .f_link_ul a:hover{ color:#ff1f35; }
 .f_qr{ background-color:#ebebeb; width:324px; overflow:hidden; margin:12px 0 0; padding:0 0 22px; }
 .f_qr_tab_top{ height:23px; border-bottom:1px solid #e5e5e5; padding:9px 9px 0; overflow:hidden;}
@@ -195,10 +195,10 @@ transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
 .f_ico_online{ background-image:url(images/ico_online2.png); width:25px; height:30px; display:inline-block; _zoom:1;*display:inline; }
 
 .f_online_right:hover .f_ico_online{ background-image:url(images/ico_online2_hover.png); }
-.f_copy_toplink{ padding-bottom:9px; overflow:hidden; }
-.f_copy_toplink a{ color:#545454; }
+.f_copy_toplink{ padding-bottom:9px; overflow:hidden; position:relative; }
+.f_copy_toplink a{ color:#545454; position:relative;}
 .f_copy_toplink a:hover{ color:#ff1f35; }
-.f_copy_toplink .f_item{ float:left; padding-right:35px; }
+.f_copy_toplink .f_item{ float:left; padding-right:35px; position:relative;}
 
 .f_copy_content{ clear:both; color:#545454; line-height:28px; }
 

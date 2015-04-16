@@ -363,9 +363,9 @@
 
 .l_faq_list{ padding:0 25px;}
 .l_faq_list .l_faq_cell{padding:27px 0; border-bottom:1px dashed #d9d9d9;}
-.l_faq_list .l_faq_question{ font-size:18px; height:23px; line-height:23px; background:url(images/ico_plus.png) no-repeat left center; padding-left:35px;}
+.l_faq_list .l_faq_question{ font-size:18px; height:23px; line-height:23px; background:url(images/ico_plus.gif) no-repeat left center; padding-left:35px;}
 .l_faq_list .l_faq_answer{ display:none; padding-top:16px; padding-left:35px;}
-.l_faq_list .active .l_faq_question{ background-image:url(images/ico_minus.png); background-repeat: no-repeat;}
+.l_faq_list .active .l_faq_question{ background-image:url(images/ico_minus.gif); background-repeat: no-repeat;}
 .l_faq_list .active .l_faq_answer{ display: block;}
 
 .l_zzb_540{ background:url(images/zzb_trend.jpg) no-repeat right top; height:359px; position:relative;}

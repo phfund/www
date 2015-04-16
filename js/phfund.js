@@ -131,7 +131,7 @@
      * */
 
     $('.h_search').bind('click', function () {
-        $('.h_search_box').addClass('active');
+        $('.h_search_box').addClass('h_search_box_active');
         $('.h_search_box .h_input').focus();
 
         return !1;
@@ -329,12 +329,21 @@
         }
     });
 
-    if ($.jCarouselLite) {
+    if ($.fn.jCarouselLite) {
 
         /*
          * 资讯详情 杂志切换
          * */
-        $(".c_sider_slider").jCarouselLite({
+
+        $('.c_slider_box').hover(function () {
+            $('.c_btn_next',this).show();
+            $('.c_btn_prev',this).show();
+        },function () {
+            $('.c_btn_next',this).hide();
+            $('.c_btn_prev',this).hide();
+        })
+
+         $(".c_sider_slider").jCarouselLite({
             btnNext: ".c_slider_box .c_btn_next",
             btnPrev: ".c_slider_box .c_btn_prev",
             speed: 500,
