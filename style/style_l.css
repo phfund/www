@@ -393,6 +393,9 @@
 .l_cell_zzb .l_zzb_cell_step{ padding:25px 0 46px; text-align: center;}
 .l_cell_zzb .l_faq_cell:last-child{ border-bottom:0;}
 .l_cell_zzb .l_faq_list{ padding-bottom:20px;}
+.l_faq_list .c_item .c_ico{ left:2px;}
+.l_faq_list .c_title3{ padding-left:40px;}
+.l_faq_list .c_content{ padding-left:40px;}
 
 .l_grid_video{ padding:16px 24px 0px;}
 .l_grid_video_box,.l_grid_video_box img{ width:280px; height: 220px;}

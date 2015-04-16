@@ -249,8 +249,9 @@
 
     $('.c_expender .c_ico').click(function () {
         $(this).closest('.c_item').toggleClass('active');
-        console.log(111)
+       // console.log(111)
     });
+
 
     /**
      * 右侧的banner
@@ -441,4 +442,10 @@
         _cells.hide();
         _cells.eq(_index).show();
     });
+
+    /**常见问题伸展**/
+    $('.action_question .l_faq_question').bind('click',function(){
+        $(this).closest('.l_faq_cell').toggleClass('active');
+    });
+
 })(window, window.document)
