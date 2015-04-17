@@ -213,6 +213,7 @@
 .l_right_banner .l_icon05{ width:22px; height:23px;  background-image:url(images/ico_apps.png);}
 .l_right_banner .l_icon06{ width:24px; height: 23px; background-image:url(images/ico_weixin.png);}
 .l_right_banner .l_icon07{ width:25px; height: 22px; background-image: url(images/ico_weibo.png);}
+.l_right_banner .l_icon09{ width:22px; height: 18px; background-image: url(images/ico_heart.png); display: inline-block; vertical-align: middle; background-repeat: no-repeat;}
 .l_right_banner .l_icon_box:hover .l_icon,.l_right_banner .l_icon_txt{ display: none;}
 .l_right_banner .l_icon_box:hover .l_icon_txt{ position: absolute; display: block; left:-10px; bottom:0; top:0; right:-10px; padding:10px 12px; background-color:#ff1f35; font-size:16px; line-height: 22px; color: #fff; }
 .l_right_banner .l_qcode{ display: none; position: absolute; width:270px; *padding-bottom:20px;  left:-280px; top:0; background-color: #fff; box-shadow: 1px 2px 2px #bbbaba; border: 1px solid #f2f2f2;}
