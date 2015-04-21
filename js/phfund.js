@@ -263,7 +263,7 @@
             _banner = $('.l_right_banner'),
             _time = 200;
         if (_width > 1200) {
-            _right = (_width - 1200) / 2 - 55;
+            _right = (_width - 1200) / 2 - 58;
         }
         _banner.css('right', _right + 'px');
         //console.log(_top < 500)
