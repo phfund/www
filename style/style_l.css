@@ -649,4 +649,11 @@
 
 .l_nav .h_item a{ color: #fff;}
 .l_container .h_subtitle{}
+.l_nav .h_item a{ border-radius:0px; }
 .l_right_banner .l_hot_phone{ height:61px; *height:41px; line-height: 61px;  width:190px; left:-200px; font-weight: 500;}
+.l_nav .h_item a:hover,
+.l_nav .h_item .active
+{ background-color:transparent; border-bottom: 3px solid #ff1f35; }
+.l_nav .h_item a:hover .c_red,
+.l_nav .h_item .active .c_red{  background-color:transparent;}
+.l_h_logo{ background-image: url(images/ico_logo1.png); }
