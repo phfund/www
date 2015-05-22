@@ -203,7 +203,7 @@
 .l_padding_bottom_0{ padding-bottom:0;}
 
 /**left banner**/
-.l_right_banner{  position: absolute; right:30px; top:590px; z-index:100;}
+.l_right_banner{  position: absolute; right:30px; top:590px; z-index:100; background-color:#e6e6e6;}
 .l_right_banner .l_icon_box{ position: relative; display: block; padding-top:10px;  width:48px; height: 53px; line-height: 23px; text-align: center; background:url(images/l_banner_line.png) no-repeat center top;}
 .l_right_banner .l_icon_box:first-child{ background:none;}
 .l_right_banner .l_icon01,.l_right_banner .l_icon02,.l_right_banner .l_icon03,.l_right_banner .l_icon04,.l_right_banner .l_icon05,.l_right_banner .l_icon06,.l_right_banner .l_icon07{ display: inline-block; vertical-align: middle; background-repeat: no-repeat;}

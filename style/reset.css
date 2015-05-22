@@ -1,5 +1,5 @@
 body, ul, li, p, dl, dd, dt, input, h2, h3, h4, h5, menu{ padding:0; margin:0; }
-body{ color:#333; background-color:#f7f7f7; }
+body{ color:#333; background-color:#e6e6e6; }
 body, input, textarea{ font-size:12px; font-family:'MICROSOFT YAHEI'; }
 ul, li{ list-style:none; }
 a{ color:#555; cursor:pointer; }
@@ -106,6 +106,9 @@ input::-ms-clear{ display:none; }
 .h_banner{ height:580px; overflow:hidden; width:100%; position:relative;}
 .h_banner .h_item{ height:580px;width: 100%; position:relative;}
 .h_banner img{ height:580px; display:block; position:absolute;top: 0; left:50%; margin-left:-950px;}
+.h_banner_apps ,
+.h_banner_apps .h_item,
+.h_banner_apps img{ height:680px;}
 .h_banner .slide_tabs{ position:absolute; left:50%; bottom:12px;z-index: 999;}
 .h_banner .slide_tabs li{ float:left; padding:0 5px;}
 .h_banner .slide_tabs a{ display:block; width:12px; height:12px; background-color:#fff; opacity:.5;filter:alpha(opacity=50);border-radius:6px; overflow:hidden; text-indent:-99px;}
