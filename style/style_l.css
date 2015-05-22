@@ -7,6 +7,7 @@
 .l_color_yellow{ color: #fff178;}
 .l_color_red2{ color: #ff1f35;}
 .l_color_black{ color: #000;}
+.l_color_white{ color: #fff;}
 .l_item{ border-top:1px solid #191919; color: #fff;}
 .l_item p{ padding-left:25px; height: 56px; line-height: 56px;}
 .l_item b{ padding-right: 5px; font-family: arial, sans-serif; font-weight: normal; font-size:22px;}
@@ -215,7 +216,7 @@
 .l_right_banner .l_icon07{ width:25px; height: 22px; background-image: url(images/ico_weibo.png);}
 .l_right_banner .l_icon09{ width:22px; height: 18px; background-image: url(images/ico_heart.png); display: inline-block; vertical-align: middle; background-repeat: no-repeat;}
 .l_right_banner .l_icon_box:hover .l_icon,.l_right_banner .l_icon_txt{ display: none;}
-.l_right_banner .l_icon_box:hover .l_icon_txt{ position: absolute; display: block; left:-10px; bottom:0; top:0; right:-10px; padding:10px 12px; background-color:#ff1f35; font-size:16px; line-height: 22px; color: #fff; }
+.l_right_banner .l_icon_box:hover .l_icon_txt{ position: absolute; display: block; left:-10px; bottom:0; top:0; right:-10px; padding:10px 12px; background-color:#ff1f35; font-size:16px; line-height: 22px; color: #fff; height:43px;}
 .l_right_banner .l_qcode{ display: none; position: absolute; width:270px; *padding-bottom:20px;  left:-280px; top:0; background-color: #fff; box-shadow: 1px 2px 2px #bbbaba; border: 1px solid #f2f2f2;}
 .l_right_banner .l_icon_box:hover .l_qcode{ display: block; color: #333;}
 .l_right_banner .l_qcode_inner{ overflow: hidden; padding:30px 0;}
@@ -606,14 +607,35 @@
 .l_text_table .l_size_14{ color: #808080;}
 .l_border_none{ border:none;}
 .l_fund_bottom_none{ border-bottom:0;}
-.l_apps{ border:1px solid #e5e5e5; overflow: hidden;}
+.l_apps{ border:1px solid #e5e5e5; overflow: hidden; border-bottom: 0;}
+.l_apps_hd{  height:1173px; }
 .l_apps .l_app_img{ position: absolute; left:0; right:0; top:0; height:150px;}
 .l_apps .l_cell_inner{ padding:170px 20px 20px;}
 .l_apps .l_apps_item,.l_apps .l_apps_item_last{ position: relative; float: left;  line-height: 22px; }
 .l_apps .l_apps_item{ width:398px; border-right:1px solid #e5e5e5; background-color:#fff;}
-.l_apps .l_apps_item_last{ width:398px; border-right:0;  background-color:#fff;}
+.l_apps .l_apps_list{ border-bottom:1px solid #e5e5e5; background-color:#fff; height:390px; width:100%;}
+.l_apps .l_apps_item_last{ width:398px; height:390px; border-right:0;  background-color:#fff;}
+.l_apps .l_app_list_img{ float:left; width:260px; border-right:1px solid #e5e5e5; text-align: center; padding-top:65px; font-size:20px; height:325px;}
+.l_apps .l_app_img_title{ padding-top:10px; padding-bottom:5px;}
+.l_apps .l_app_list_inner{ padding:20px;}
+.l_apps .l_app_list_right{ position: relative; margin-left:260px; font-size:16px; color: #666; padding-top:10px; line-height: 25px;}
+.l_apps .l_app_list_head_lf{ width:500px; }
+.l_apps .l_app_dl{ padding-top:10px; line-height: 18px; }
+.l_apps .l_app_dl_dt{ float:left;}
+.l_apps .l_app_dl_dd{ margin-left:70px; color: #a2a2a2; font-size:14px; width:400px;}
+.l_apps .l_app_list_head{ border-bottom: 1px solid #f0f0f0; padding-bottom:10px;  }
+.l_apps .l_app_list_body{ padding:10px 20px 10px 10px; overflow: hidden;}
+.l_apps .l_app_list_body_lf{ float: left; width:499px; height:165px; border-right:1px solid #f0f0f0;}
+.l_apps .l_app_list_body_rg{ width:327px; float: right; height: 169px; position: relative; font-size:14px; line-height: 20px;  }
+.l_apps .l_app_list_code{ position: absolute; right:0; top:10px; *top:7px; width:200px; line-height: 16px; text-align: right; }
+.l_apps .l_app_code_out{ border:2px solid #000066; padding:5px; width:112px; height: 112px; }
+.l_apps .l_app_list_body .l_size_20{ text-align: left; padding:10px 0; }
 .l_apps .l_size_24{ height:40px;}
-.l_apps .l_button_red{ position: absolute; right:20px; top:236px;}
+.l_apps .l_app_list_opt{ overflow: hidden; height:60px;}
+.l_apps .l_app_iphone_bt,.l_apps .l_app_android_bt{ display:block; float:left; margin-right:20px; width:220px; height: 51px; background-repeat: no-repeat;}
+.l_apps .l_app_iphone_bt{ background-image:url(images/app_iphone-dl.jpg);}
+.l_apps .l_app_android_bt{ background-image:url(images/app_andro_dl.jpg);}
+.l_apps .l_button_red{ position: absolute; right:42px; top:140px; padding:3px 30px; font-size:12px;}
 .l_apps .l_app_chart{ background: url(images/app_code_bg.jpg) no-repeat right bottom;}
 .l_apps .l_app_weibo{ background:url(images/app_code_bg_02.jpg) no-repeat right bottom;}
 .l_apps .l_app_chart,.l_apps .l_app_weibo{ height:300px;}
@@ -624,3 +646,7 @@
 .l_grid_latest,.l_grid_vision{ *width:850px;}
 .l_page_menu_ul .active .c_menu_item{ padding-left:25px;}
 .l_page_menu_ul .c_menu_item{ *width:275px;}
+
+.l_nav .h_item a{ color: #fff;}
+.l_container .h_subtitle{}
+.l_right_banner .l_hot_phone{ height:61px; *height:41px; line-height: 61px;  width:190px; left:-200px; font-weight: 500;}
