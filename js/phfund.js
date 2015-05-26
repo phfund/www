@@ -400,7 +400,7 @@
      * */
     if ($.fn.responsiveSlides) {
         $("#slider").responsiveSlides({
-            auto: !1,
+            auto: !!1,
             pager: !0,
             nav: !1,
             speed: 500,

@@ -74,7 +74,7 @@ input::-ms-clear{ display:none; }
 
 .h_nav{ float:left; padding:18px 20px 0 20px; width:625px;}
 .h_nav .h_item{ float:left; padding:0 10px; }
-.h_nav .h_item a{ float:left; height:40px; line-height:40px; color:#333; font-size:16px;  padding:0 18px; position:relative;border-radius:20px;}
+.h_nav .h_item a{ float:left; height:40px; line-height:40px; color:#333; font-size:16px;  padding:0 18px; position:relative;border-radius:20px; white-space:nowrap;}
 .h_nav .h_item a:hover,
 .h_nav .h_item .active,
 .h_nav .h_item a:hover .c_red,
@@ -87,9 +87,9 @@ input::-ms-clear{ display:none; }
 .h_search_inner{ overflow:hidden; display:none;}
 .h_search_box .h_ico_search{ cursor:pointer; color:#000; position:absolute; right:3px; top:3px; width:36px; height:36px; background-image:url(images/h_ico_search.png); display:none;}
 
-.h_search_box_active{ width:323px;}
+.h_search_box_active{ width:303px; background-color:#fafafa;}
 .h_search_box_active .h_ico_search,.h_search_box_active .h_search_inner{ display:block;}
-.h_search_box .h_input{ font-size:14px; border:none; height:42px; margin:0 0 0 25px;border-radius:20px; width:259px; background-color:transparent; border-width:0; line-height:42px;}
+.h_search_box .h_input{ font-size:14px; border:none; height:42px; margin:0 0 0 25px;border-radius:20px; width:235px; background-color:transparent; border-width:0; line-height:42px;}
 .h_search_box .h_ico_search:hover{ background-color:#ff1f35;border-radius:18px; background-image:url(images/h_ico_search_hover.png);}
 .h_drop_menu{ width:323px; display:none; position:absolute; top:51px; background-color:#fff; box-shadow: 0 2px 3px rgba(0,0,0,.3);left: 0; line-height:40px; font-size:14px; padding:5px 0;}
 .h_drop_menu .h_item{ height:40px; float:left;width: 100%;}
@@ -114,11 +114,11 @@ input::-ms-clear{ display:none; }
 .h_banner .slide_tabs a{ display:block; width:12px; height:12px; background-color:#fff; opacity:.5;filter:alpha(opacity=50);border-radius:6px; overflow:hidden; text-indent:-99px;}
 .h_banner .slide_tabs .slide_here a{ opacity:.9;filter:alpha(opacity=90);}
 
-.h_login_box{ position:absolute;top: 0; left:50%; margin-left:-600px; width:1200px; height:530px; z-index:8;}
+.h_login_box{ position:absolute;top: 0; left:50%; margin-left:-600px; width:1200px; height:530px; z-index:8;pointer-events:none;}
 
 .h_login_box_bg{position:absolute;background-color:#000; opacity:.75;filter:alpha(opacity=75);width: 100%;width:300px; height:400px; z-index:1;right:0; top:130px;}
 
-.h_login{ position:absolute; width:300px; height:400px; right:0; top:130px;z-index: 999;*position:absolute;*z-index: 999;}
+.h_login{ position:absolute; width:300px; height:400px; right:0; top:130px;z-index: 999;*position:absolute;*z-index: 999;pointer-events:auto;}
 .h_switch_btn{ background-image:url(images/ico_h_to_qr.png); width:45px; height:45px; position:absolute; top:0; right:0; cursor:pointer; -webkit-transition:background-position .2s cubic-bezier(0.25, .5, .5, .9);
 -moz-transition:background-position .2s cubic-bezier(0.25, .5, .5, .9);
 transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
