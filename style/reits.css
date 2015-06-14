@@ -1,0 +1,43 @@
+
+body{ background-color:#fff;}
+.container{ z-index:9; width:1200px; margin:0 auto; position:relative; *zoom:1; }
+.c_red{ color:#ff1f35 !important; font-size:12px; }
+
+.clear{ clear:both;}
+
+.wrap{ width:1280px; margin:0 auto; background-color:#fafafa;}
+.box{ width:1120px; margin:0 auto;}
+
+
+.banner_wrap{ background:#4f85b1 url(images/bg_reits_banner_line.png) repeat-y center top;}
+.banner{ background-image:url(images/bg_reits_banner.png); height:600px; position:relative;}
+
+.tab{ background:#fafafa url(images/bg_reits_banner2.png) no-repeat; height:285px;padding-bottom:30px;}
+.tab .item { float:left; font-size:24px; color:#5693b7; text-align:center; width:20%; margin-top:75px; cursor:pointer;}
+.tab .item .ico{ width:99px; height:116px; display:block; margin:0 auto;}
+
+.tab .item1 .ico{ background-image:url(images/ico_reits_charateristic_normal.png);}
+.tab .item2 .ico{ background-image:url(images/ico_reits_notice_normal.png);}
+.tab .item3 .ico{ background-image:url(images/ico_reits_info_normal.png);}
+.tab .item4 .ico{ background-image:url(images/ico_reits_purchase_normal.png);}
+.tab .item5 .ico{ background-image:url(images/ico_reits_hazard-wareness_normal.png);}
+
+.tab .active .ico1{ background-image:url(images/ico_reits_charateristic_selected.png);}
+.tab .active .ico2{ background-image:url(images/ico_reits_notice_selected.png);}
+.tab .active .ico3{ background-image:url(images/ico_reits_info_selected.png);}
+.tab .active .ico4{ background-image:url(images/ico_reits_purchase_selected.png);}
+.tab .active .ico5{ background-image:url(images/ico_reits_hazard-wareness_selected.png);}
+
+.tab-content .box img{ padding:30px 0;}
+
+.tab-content{ padding-bottom:60px; overflow:hidden;}
+.tab-content a{ color:#910000;text-decoration:underline;}
+
+.text { font-size:20px; color:#3e3a39; text-indent:2em; padding:10px 0; line-height:1.6;}
+.title{ font-size:30px; color:#910000; margin:20px auto; height:40px; line-height:40px; background:url(images/ico_reits_point.png) left no-repeat; padding-left:46px; width:1074px;}
+
+#tab4 .text{ text-indent:0;}
+
+#tab5 {}
+.title5{ text-align:center; font-size:30px; color:#3e3a39; padding:20px 0;}
+.text5{  color:#3e3a39; font-size:20px; line-height:1.6;}

@@ -396,6 +396,20 @@
     });
 
     /*
+     *
+     *
+     * */
+
+    $.gui.tabs({
+        container: '.reits_tab', //tab 最外层的 selector
+        top: '.tab', //包裹 topElem 的 selector
+        topElem: 'div', //点击的元素 ,一定要有 href 属性, 对应切换容器的 id
+        activeClass: 'active',// tabElem 选中的 className
+        events: 'click', //切换事件, 默认点击
+        callback: null // 切换回调
+    });
+
+    /*
      * 头部轮播图
      * */
     if ($.fn.responsiveSlides) {
