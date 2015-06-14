@@ -58,5 +58,5 @@ body{ background-color:#fff;}
 #tab2 .avatar{ text-indent:0; padding-right:45px;}
 #tab2 .avatar img{ padding:0;}
 
-.c_button{ color:#fff; border:none; background-color:#ff1f35; height:36px; line-height:36px; text-align:center; min-width:90px; _width:90px; font-size:14px; display:inline-block; -ms-border-radius:18px; border-radius:18px; text-indent:0; }
+.c_button{ color:#fff; border:none; background-color:#ff1f35; height:50px; line-height:50px; text-align:center; width:168px; font-size:18px; display:inline-block; -ms-border-radius:25px; border-radius:25px;  }
 .c_button:hover{ background-color:#d82736; color:#fff; }
