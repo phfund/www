@@ -41,3 +41,14 @@ body{ background-color:#fff;}
 #tab5 {}
 .title5{ text-align:center; font-size:30px; color:#3e3a39; padding:20px 0;}
 .text5{  color:#3e3a39; font-size:20px; line-height:1.6;}
+.fz16{ font-size:16px;}
+.fz14{ font-size:14px;}
+.fz24{ font-size:24px;}
+.grey{ color:#808080; font-size:16px;}
+.red{ color:#910000; font-size:24px;}
+.ti0{ text-indent:0!important;}
+
+#tab2 .red{ font-size:20px;}
+.top_box p{ min-height:20px;}
+#tab2 .avatar{ text-indent:0; padding-right:45px;}
+#tab2 .avatar img{ padding:0;}
