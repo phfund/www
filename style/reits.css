@@ -17,7 +17,7 @@ body{ background-color:#fff;}
 
 .tab-bg{ position:absolute; z-index:-1; top:600px; left:50%; margin-left:-640px; height:400px;}
 
-.tab{ height:285px;padding-bottom:30px; margin-top:-120px; position:relative;z-index: 999; background-color:transparent;}
+.tab{ height:285px;margin-bottom:30px; margin-top:-120px; position:relative;z-index: 999; background:transparent url(images/bg_reits_tabline.png) center bottom no-repeat;}
 .tab .item { float:left; font-size:24px; color:#5693b7; text-align:center; width:20%; margin-top:75px; cursor:pointer;}
 .tab .item .ico{ width:99px; height:116px; display:block; margin:0 auto;}
 
