@@ -104,8 +104,8 @@ input::-ms-clear{ display:none; }
 .h_explor .h_ico_arrow_right_outline{ background-image:url(images/ico_arrow_right_outline.png); width:24px; height:24px; position:absolute; right:0; top:9px; }
 
 .h_banner{ height:580px; overflow:hidden; width:100%; position:relative;}
-.h_banner .h_item{ height:580px;width: 100%; position:relative;}
-.h_banner img{ height:580px; display:block; position:absolute;top: 0; left:50%; margin-left:-950px;}
+.h_banner .h_item{ height:100%;width: 100%; position:relative;}
+.h_banner img{ height:100%; display:block; position:absolute;top: 0; left:50%; margin-left:-950px;}
 .h_banner_apps ,
 .h_banner_apps .h_item,
 .h_banner_apps img{ height:680px;}
@@ -168,6 +168,65 @@ transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
 .h_login_help{ padding-top:12px; width:95%; margin:0 auto; }
 .h_login_help .h_item{ border-color:#c3c3c3; border:none;}
 .h_login_help .h_txt{ color:#999; text-align:center; display:block; }
+
+.h_login_2_banner{ height:780px;}
+.h_login_2_banner img{ margin-left:-950px; height:1000px;}
+
+.h_login_2_box{ width:1090px; margin:0 auto; position:absolute; height:510px;z-index: 999; left:50%; margin-left:-545px; top:172px;}
+
+.h_login_2_box_inner{ margin:6px; background-color:#fff;height:498px;}
+.h_login_2_box_bg{position:absolute;top: 0;left: 0; width:1090px; height:510px; background-color:#000; opacity:0.3;filter:alpha(opacity=30); z-index:-1;}
+
+.h_login_2_box .h_left{ overflow:hidden; float:left; width:664px;height: 100%; border-right:2px solid #ff2d37;}
+
+.h2_notice_list{ overflow:hidden; height:26px; margin:41px 20px 0 46px;}
+.h2_notice_list .h_item{ font-size:14px; background:url(images/ico_login_notice.png) left center no-repeat; padding-left:26px; height:26px; line-height:26px; display:block;}
+.h2_adv_box{ padding:30px 0 0 60px;}
+
+.h_login_2_box .h_right{ overflow:hidden;}
+.h_login_2_box .h_right_inner{ margin:16px 80px 0;}
+.h2_tab_top{ height:30px;}
+.h2_tab_top .h2_item{height: 100%; cursor:pointer; float:left;width: 50%; color:#999; font-size:16px; text-align:center;border-bottom:1px solid #dcdcdc}
+.h2_tab_top .active{ color:#333; border-bottom-color:#ff2d37;}
+
+.h2_form { padding:16px 0;}
+.h2_form input{ border:none; border-width:0; height:36px; line-height:36px; color:#333; font-size:14px; width:170px;}
+.h2_form .h2_input_item{ background-color:#fff; border:1px solid #a6a6a6; height:36px; margin-bottom:7px; padding-left:26px;}
+
+.h2_form .h2_ico{ width:37px; height:37px;}
+.h2_ico_left,
+.h2_ico_right{ position:relative;}
+.h2_form .h2_ico_left{ padding-left:56px;}
+.h2_ico_left .h2_ico{ position:absolute; left:-1px; top:-1px;z-index: 999;}
+.h2_ico_right .h2_ico{ position:absolute; right:-1px; top:-1px;}
+
+.h2_vcode{ margin-bottom:7px; overflow:hidden;}
+.h2_vcode .h2_input_item{ width:90px; float:left; margin-right:12px;}
+.h2_vcode input{ width:87px;}
+
+.h2_button{ font-size:16px; color:#fff; text-align:center; height:42px; line-height:42px; margin-bottom:8px; background-color:#ff1f35; display:block;}
+.h2_button:hover{ color:#fff; background-color:#e81c30;}
+
+.h2_links{ text-align:center;border-bottom:1px dashed #4d5157; padding-bottom:12px; margin-bottom:14px;}
+.h2_links a{}
+.h2_links span{ padding:0 10px;}
+
+.h2_partner {}
+.h2_partner .h2_title{ font-size:16px; padding-bottom:15px;}
+.h2_partner .h2_item{ color:#666; text-align:center; float:left; display:inline; margin-right:13px;}
+.h2_partner .h2_end{ margin-right:0; width:48px;}
+.h2_partner .h2_ico{ width:38px; height:38px; margin-bottom:8px; display:block; margin:0 auto;}
+.h2_pt1 { background-image:url(images/ico_login_p1.png);}
+.h2_pt2 { background-image:url(images/ico_login_p2.png);}
+.h2_pt3 { background-image:url(images/ico_login_p3.png);}
+.h2_pt4 { background-image:url(images/ico_login_p4.png);}
+.h2_pt5 { background-image:url(images/ico_login_p5.png);}
+
+
+.h2_ico_drop{ background-image:url(images/ico_login_drop.png);}
+.h2_ico_id{ background-image:url(images/ico_login_id.png);}
+.h2_ico_pwd{ background-image:url(images/ico_login_password.png);}
+.h2_ico_vcode{ background-image:url(images/ico_login_vcode.png);}
 
 .footer{ background-color:#fff; border-top:1px solid #e5e5e5; margin-top:40px; }
 
