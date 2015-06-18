@@ -74,7 +74,7 @@
                 this.items.bind(options.events, function (evt) {
                     var href = $(this).attr('href');
 
-                    $.each(contents,function (i,item) {
+                    $.each(contents, function (i, item) {
                         if (item == href) {
                             $(item, options.container).show();
                         } else {
@@ -249,9 +249,8 @@
 
     $('.c_expender .c_ico').click(function () {
         $(this).closest('.c_item').toggleClass('active');
-       // console.log(111)
+        // console.log(111)
     });
-
 
     /**
      * 右侧的banner
@@ -336,14 +335,14 @@
          * */
 
         $('.c_slider_box').hover(function () {
-            $('.c_btn_next',this).show();
-            $('.c_btn_prev',this).show();
-        },function () {
-            $('.c_btn_next',this).hide();
-            $('.c_btn_prev',this).hide();
+            $('.c_btn_next', this).show();
+            $('.c_btn_prev', this).show();
+        }, function () {
+            $('.c_btn_next', this).hide();
+            $('.c_btn_prev', this).hide();
         })
 
-         $(".c_sider_slider").jCarouselLite({
+        $(".c_sider_slider").jCarouselLite({
             btnNext: ".c_slider_box .c_btn_next",
             btnPrev: ".c_slider_box .c_btn_prev",
             speed: 500,
@@ -434,7 +433,7 @@
         events: 'click', //切换事件, 默认点击
         callback: null // 切换回调
     });
- /*
+    /*
      * 13 搜索
      *
      * */
@@ -452,14 +451,14 @@
     });
 
     $('.h_sub_item').hover(function () {
-            $('.h_sub_item_menu', this).css('visibility','visible');
+            $('.h_sub_item_menu', this).css('visibility', 'visible');
         }, function () {
-            $('.h_sub_item_menu', this).css('visibility','hidden');
+            $('.h_sub_item_menu', this).css('visibility', 'hidden');
         }
     );
 
     /**专业理财 开户流程,网上直销交易流程**/
-    $('.l_flow_box .action_flow').bind('click',function(){
+    $('.l_flow_box .action_flow').bind('click', function () {
         var _index = $(this).index(),
             _cells = $(this).parents('.l_flow_box').children('.l_flow_box_dialog').children('.l_flow_dialog_cell');
         _cells.hide();
@@ -467,8 +466,51 @@
     });
 
     /**常见问题伸展**/
-    $('.action_question .l_faq_question').bind('click',function(){
+    $('.action_question .l_faq_question').bind('click', function () {
         $(this).closest('.l_faq_cell').toggleClass('active');
     });
+
+    /*
+     * 12登陆下拉菜单*/
+    $('.h2_has_menu').click(function () {
+        var self = this;
+
+        $(self).toggleClass('h2_menu_active');
+
+        $('.h2_menu_item', self).unbind().bind('click', function () {
+
+            $('input', self).val($(this).text());
+
+        })
+
+    })
+
+    $('.h2_partner .h2_item').hover(function () {
+        var self = this;
+
+        var title = $(self).attr('ctitle');
+        var tip = $('.h2_partner_tip');
+        var content = $('.h2_partner_tip .content');
+        var arrow = $('.h2_partner_tip .h2_tip_arrow');
+
+        if (title) {
+            content.html(title);
+
+            tip.stop().show();
+
+            var offset = $(self).offset();
+            var item_width = $(self).width();
+            var offset_left = offset.left;
+
+            var left = (offset_left + item_width / 2) - 5;
+
+            arrow.offset({
+                left: left
+            })
+        }
+
+    }, function () {
+        $('.h2_partner_tip').stop().fadeOut('fast');
+    })
 
 })(window, window.document)
