@@ -172,9 +172,9 @@ transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
 .h_login_2_banner{ height:780px;}
 .h_login_2_banner img{ margin-left:-950px; height:1000px;}
 
-.h_login_2_box{ width:1090px; margin:0 auto; position:absolute; height:510px;z-index: 999; left:50%; margin-left:-545px; top:172px;}
+.h_login_2_box{ width:1090px; margin:0 auto; position:absolute; height:510px;z-index: 999; left:50%; margin-left:-545px; top:172px; overflow:hidden; zoom:1;}
 
-.h_login_2_box_inner{ margin:6px; background-color:#fff;height:498px;}
+.h_login_2_box_inner{ margin:6px; background-color:#fff;height:498px; position:relative;*top:6px;}
 .h_login_2_box_bg{position:absolute;top: 0;left: 0; width:1090px; height:510px; background-color:#000; opacity:0.3;filter:alpha(opacity=30); z-index:-1;}
 
 .h_login_2_box .h_left{ overflow:hidden; float:left; width:664px;height: 100%; border-right:2px solid #ff2d37;}
@@ -183,22 +183,22 @@ transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
 .h2_notice_list .h_item{ font-size:14px; background:url(images/ico_login_notice.png) left center no-repeat; padding-left:26px; height:26px; line-height:26px; display:block;}
 .h2_adv_box{ padding:30px 0 0 60px;}
 
-.h_login_2_box .h_right{ overflow:hidden;}
+.h_login_2_box .h_right{ overflow:hidden; float:left; width:412px;}
 .h_login_2_box .h_right_inner{ margin:16px 80px 0;}
 .h2_tab_top{ height:30px;}
-.h2_tab_top .h2_item{height: 100%; cursor:pointer; float:left;width: 50%; color:#999; font-size:16px; text-align:center;border-bottom:1px solid #dcdcdc}
+.h2_tab_top .h2_item{height: 100%; cursor:pointer; float:left;width: 49%; color:#999; font-size:16px; text-align:center;border-bottom:1px solid #dcdcdc}
 .h2_tab_top .active{ color:#333; border-bottom-color:#ff2d37;}
 
-.h2_form { padding:16px 0;}
+.h2_form { padding:16px 0; zoom:1;}
 .h2_form input{ border:none; border-width:0; height:36px; line-height:36px; color:#333; font-size:14px; width:170px;}
-.h2_form .h2_input_item{ background-color:#fff; border:1px solid #a6a6a6; height:36px; margin-bottom:7px; padding-left:26px;}
+.h2_form .h2_input_item{ background-color:#fff; border:1px solid #a6a6a6; height:36px; margin-bottom:7px; padding-left:26px; overflow:hidden;}
 
 .h2_form .h2_ico{ width:37px; height:37px;}
 .h2_ico_left,
 .h2_ico_right{ position:relative;}
 .h2_form .h2_ico_left{ padding-left:56px;}
-.h2_ico_left .h2_ico{ position:absolute; left:-1px; top:-1px;z-index: 999;}
-.h2_ico_right .h2_ico{ position:absolute; right:-1px; top:-1px;}
+.h2_ico_left .h2_ico{ position:absolute; left:-1px; top:0px;z-index: 999;}
+.h2_ico_right .h2_ico{ position:absolute; right:-1px; top:0px;}
 
 .h2_vcode{ margin-bottom:7px; overflow:hidden;}
 .h2_vcode .h2_input_item{ width:90px; float:left; margin-right:12px;}
@@ -213,7 +213,7 @@ transition:background-position .2s cubic-bezier(0.25, .5, .5, .9); }
 
 .h2_partner {}
 .h2_partner .h2_title{ font-size:16px; padding-bottom:15px;}
-.h2_partner .h2_item{ color:#666; text-align:center; float:left; display:inline; margin-right:13px;}
+.h2_partner .h2_item{ color:#666; text-align:center; float:left; display:inline; margin-right:13px; width:38px;}
 .h2_partner .h2_end{ margin-right:0; width:48px;}
 .h2_partner .h2_ico{ width:38px; height:38px; margin-bottom:8px; display:block; margin:0 auto;}
 .h2_pt1 { background-image:url(images/ico_login_p1.png);}
