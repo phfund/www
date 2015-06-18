@@ -509,7 +509,9 @@
             })
         }
 
-    }, function () {
+    });
+
+    $(document).bind('click', function () {
         $('.h2_partner_tip').stop().fadeOut('fast');
     })
 
